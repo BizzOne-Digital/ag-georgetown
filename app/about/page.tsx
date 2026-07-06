@@ -34,7 +34,7 @@ export default function AboutPage() {
               alt={AG_ABOUT_HERO.alt}
               fill
               sizes="(max-width: 768px) 90vw, 45vw"
-              className="object-contain p-10"
+              className="object-cover"
             />
           </FacetedFrame>
           <h1 className="font-display text-h1 font-medium text-ink">

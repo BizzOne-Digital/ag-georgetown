@@ -18,7 +18,7 @@ export function ValueRow({ Art, image, title, body, reverse }: ValueRowProps) {
     >
       <div className="relative flex h-56 items-center justify-center bg-gradient-to-br from-gold-start/15 to-gold-end/25 clip-facet md:h-72">
         {image ? (
-          <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 90vw, 45vw" className="object-contain p-6" />
+          <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 90vw, 45vw" className="object-cover" />
         ) : (
           <Art className="h-32 w-32" />
         )}

@@ -51,24 +51,26 @@ const SKINCARE_PAIRINGS = [
   { Art: SkincareJarArt, name: "Travel-Size Moisturizer", note: "Perfect for on-the-go touch-ups" },
 ];
 
-function TileGrid({ items }: { items: ProductItem[] }) {
+function TileGrid({ items, dark = false, cols = 4 }: { items: ProductItem[]; dark?: boolean; cols?: 2 | 4 }) {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 [&>*:nth-child(even)]:md:translate-y-6">
+    <div
+      className={`grid grid-cols-2 gap-4 ${cols === 2 ? "md:grid-cols-2" : "md:grid-cols-4"} md:gap-6 [&>*:nth-child(even)]:md:translate-y-6`}
+    >
       {items.map((item) => (
-        <ProductTile key={`${item.brand}-${item.name}`} {...item} />
+        <ProductTile key={`${item.brand}-${item.name}`} {...item} dark={dark} />
       ))}
     </div>
   );
 }
 
-function SubGroup({ label, items }: { label: string; items: ProductItem[] }) {
+function SubGroup({ label, items, dark = false, cols = 4 }: { label: string; items: ProductItem[]; dark?: boolean; cols?: 2 | 4 }) {
   return (
     <div>
       <span className="inline-block bg-black px-4 py-1.5 font-body text-caption font-medium uppercase tracking-label text-gold-end">
         {label}
       </span>
       <div className="mt-6">
-        <TileGrid items={items} />
+        <TileGrid items={items} dark={dark} cols={cols} />
       </div>
     </div>
   );
@@ -111,10 +113,10 @@ export default function ProductsPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <SectionHeading eyebrow="Makeup" title="Face, Eyes, Lips & Nails" align="left" className="mb-12 [&_h2]:text-cream" />
           <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
-            <SubGroup label="Face" items={MAKEUP_FACE} />
-            <SubGroup label="Eyes" items={MAKEUP_EYES} />
-            <SubGroup label="Lips" items={MAKEUP_LIPS} />
-            <SubGroup label="Nails" items={MAKEUP_NAILS} />
+            <SubGroup label="Face" items={MAKEUP_FACE} dark cols={2} />
+            <SubGroup label="Eyes" items={MAKEUP_EYES} dark cols={2} />
+            <SubGroup label="Lips" items={MAKEUP_LIPS} dark cols={2} />
+            <SubGroup label="Nails" items={MAKEUP_NAILS} dark cols={2} />
           </div>
           <FrequentlyPaired items={MAKEUP_PAIRINGS} dark />
         </div>
@@ -125,10 +127,10 @@ export default function ProductsPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <SectionHeading eyebrow="Skincare" title="Shop by Concern" align="left" className="mb-12" />
           <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
-            <SubGroup label="Hydration" items={SKINCARE_HYDRATION} />
-            <SubGroup label="Anti-Aging" items={SKINCARE_ANTI_AGING} />
-            <SubGroup label="Acne-Prone" items={SKINCARE_ACNE} />
-            <SubGroup label="Brightening" items={SKINCARE_BRIGHTENING} />
+            <SubGroup label="Hydration" items={SKINCARE_HYDRATION} cols={2} />
+            <SubGroup label="Anti-Aging" items={SKINCARE_ANTI_AGING} cols={2} />
+            <SubGroup label="Acne-Prone" items={SKINCARE_ACNE} cols={2} />
+            <SubGroup label="Brightening" items={SKINCARE_BRIGHTENING} cols={2} />
           </div>
           <FrequentlyPaired items={SKINCARE_PAIRINGS} />
         </div>
@@ -138,7 +140,7 @@ export default function ProductsPage() {
       <section id="accessories" className="scroll-mt-36 bg-black py-20 text-cream">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <SectionHeading eyebrow="Accessories" title="Accessories & Self-Care" align="left" className="mb-12 [&_h2]:text-cream" />
-          <TileGrid items={ACCESSORIES} />
+          <TileGrid items={ACCESSORIES} dark />
         </div>
       </section>
 

@@ -12,9 +12,10 @@ interface BundleCardProps {
   price: string;
   originalPrice?: string;
   badge: string;
+  dark?: boolean;
 }
 
-export function BundleCard({ Art, image, name, contents, price, originalPrice, badge }: BundleCardProps) {
+export function BundleCard({ Art, image, name, contents, price, originalPrice, badge, dark = false }: BundleCardProps) {
   return (
     <div className="relative border-[1.5px] gold-border p-8">
       <OfferBadge className="absolute -right-4 -top-4">{badge}</OfferBadge>
@@ -25,15 +26,15 @@ export function BundleCard({ Art, image, name, contents, price, originalPrice, b
           <Art className="h-32 w-32" />
         )}
       </div>
-      <h3 className="mt-6 font-display text-h3 font-medium text-ink">{name}</h3>
-      <p className="mt-2 font-body text-sm text-ink/70">{contents}</p>
+      <h3 className={`mt-6 font-display text-h3 font-medium ${dark ? "text-cream" : "text-ink"}`}>{name}</h3>
+      <p className={`mt-2 font-body text-sm ${dark ? "text-cream/70" : "text-ink/70"}`}>{contents}</p>
       <div className="mt-4 flex items-baseline gap-3">
         {originalPrice && (
-          <span className="font-body text-sm text-ink/40 line-through">{originalPrice}</span>
+          <span className={`font-body text-sm line-through ${dark ? "text-cream/40" : "text-ink/40"}`}>{originalPrice}</span>
         )}
         <span className="font-display text-xl font-medium text-rose-deep">{price}</span>
       </div>
-      <Button href="/contact" variant="ghost" fullWidth className="mt-6">
+      <Button href="/contact" variant="ghost" invert={dark} fullWidth className="mt-6">
         Visit to Grab This Deal
       </Button>
     </div>

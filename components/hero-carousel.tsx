@@ -36,7 +36,7 @@ export function HeroCarousel() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="absolute inset-0 flex items-center justify-center p-8"
+            className="absolute inset-0"
           >
             <Image
               src={active.image.src}
@@ -44,11 +44,12 @@ export function HeroCarousel() {
               fill
               priority={index === 0}
               sizes="(max-width: 768px) 90vw, 45vw"
-              className="object-contain"
+              className="object-cover"
             />
           </motion.div>
         </AnimatePresence>
-        <span className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 font-body text-caption font-medium uppercase tracking-label text-ink/60">
+        <div className="absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-black/50 to-transparent" aria-hidden="true" />
+        <span className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 font-body text-caption font-medium uppercase tracking-label text-cream">
           {active.label}
         </span>
       </FacetedFrame>

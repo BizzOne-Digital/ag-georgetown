@@ -72,6 +72,7 @@ export default function OffersPage() {
                 price="$39.99"
                 originalPrice="$79.99"
                 badge="Bundle"
+                dark
               />
             </RevealItem>
             <RevealItem className="md:mt-10">
@@ -82,6 +83,7 @@ export default function OffersPage() {
                 price="$19.99"
                 originalPrice="$34.99"
                 badge="45% Off"
+                dark
               />
             </RevealItem>
             <RevealItem>
@@ -92,6 +94,7 @@ export default function OffersPage() {
                 price="$29.99"
                 originalPrice="$52.99"
                 badge="New"
+                dark
               />
             </RevealItem>
           </ScrollReveal>
