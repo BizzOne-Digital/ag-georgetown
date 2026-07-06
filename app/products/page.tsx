@@ -4,7 +4,9 @@ import { ProductTile } from "@/components/product-tile";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/button";
 import { MonogramWatermark } from "@/components/monogram";
-import { GiftSetArt } from "@/components/placeholder-art";
+import { OffersMarquee } from "@/components/offers-marquee";
+import { FrequentlyPaired } from "@/components/frequently-paired";
+import { GiftSetArt, PerfumeBottleArt, SkincareJarArt, BrushArt } from "@/components/placeholder-art";
 import { SITE_URL } from "@/lib/site";
 import {
   FRAGRANCES_FOR_HER,
@@ -27,6 +29,27 @@ export const metadata: Metadata = {
     "Browse our full collection of authentic perfumes, cosmetics, and self-care essentials - in-store in Georgetown.",
   alternates: { canonical: `${SITE_URL}/products` },
 };
+
+const NEW_ARRIVALS_MESSAGES = [
+  "NEW ARRIVALS WEEKLY",
+  "FRESH STOCK EVERY FRIDAY",
+  "FOLLOW @agcosmeticsgeorgetown FOR DROPS",
+];
+
+const FRAGRANCE_PAIRINGS = [
+  { Art: GiftSetArt, name: "Travel Spray Case", note: "Keep your signature scent on hand" },
+  { Art: PerfumeBottleArt, name: "Matching Body Mist", note: "Layer your fragrance to make it last" },
+];
+
+const MAKEUP_PAIRINGS = [
+  { Art: BrushArt, name: "Setting Spray", note: "Lock your look in for the day" },
+  { Art: BrushArt, name: "Brush Cleaner", note: "Keep brushes fresh between uses" },
+];
+
+const SKINCARE_PAIRINGS = [
+  { Art: BrushArt, name: "Facial Cleansing Brush", note: "Deepens your cleansing routine" },
+  { Art: SkincareJarArt, name: "Travel-Size Moisturizer", note: "Perfect for on-the-go touch-ups" },
+];
 
 function TileGrid({ items }: { items: ProductItem[] }) {
   return (
@@ -54,7 +77,9 @@ function SubGroup({ label, items }: { label: string; items: ProductItem[] }) {
 export default function ProductsPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-gold-start/15 to-gold-end/25 pb-16 pt-32 md:pt-40">
+      <OffersMarquee messages={NEW_ARRIVALS_MESSAGES} goldText className="mt-20" />
+
+      <section className="relative overflow-hidden bg-gradient-to-br from-gold-start/15 to-gold-end/25 pb-16 pt-16 md:pt-16">
         <MonogramWatermark className="absolute -right-16 -top-16 h-80 w-80" />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 text-center lg:px-10">
           <div className="flex h-40 w-40 items-center justify-center clip-facet bg-cream/60">
@@ -77,6 +102,7 @@ export default function ProductsPage() {
             <SubGroup label="For Her" items={FRAGRANCES_FOR_HER} />
             <SubGroup label="For Him" items={FRAGRANCES_FOR_HIM} />
           </div>
+          <FrequentlyPaired items={FRAGRANCE_PAIRINGS} />
         </div>
       </section>
 
@@ -90,6 +116,7 @@ export default function ProductsPage() {
             <SubGroup label="Lips" items={MAKEUP_LIPS} />
             <SubGroup label="Nails" items={MAKEUP_NAILS} />
           </div>
+          <FrequentlyPaired items={MAKEUP_PAIRINGS} dark />
         </div>
       </section>
 
@@ -103,6 +130,7 @@ export default function ProductsPage() {
             <SubGroup label="Acne-Prone" items={SKINCARE_ACNE} />
             <SubGroup label="Brightening" items={SKINCARE_BRIGHTENING} />
           </div>
+          <FrequentlyPaired items={SKINCARE_PAIRINGS} />
         </div>
       </section>
 

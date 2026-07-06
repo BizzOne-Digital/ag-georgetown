@@ -5,12 +5,12 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { FacetedFrame } from "./faceted-frame";
 import { MonogramWatermark } from "./monogram";
-import { AG_IMAGES } from "@/lib/images";
+import { AG_HERO_1, AG_HERO_2, AG_HERO_3 } from "@/lib/images";
 
 const slides = [
-  { image: AG_IMAGES[0], label: "Designer Fragrance" },
-  { image: AG_IMAGES[2], label: "Everyday Makeup" },
-  { image: AG_IMAGES[3], label: "Gift Sets & Bundles" },
+  { image: AG_HERO_1, label: "Designer Fragrance" },
+  { image: AG_HERO_2, label: "Everyday Makeup" },
+  { image: AG_HERO_3, label: "Gift Sets & Bundles" },
 ];
 
 export function HeroCarousel() {

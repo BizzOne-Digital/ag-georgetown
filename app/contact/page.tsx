@@ -3,7 +3,10 @@ import { ContactForm } from "@/components/contact-form";
 import { MapEmbed } from "@/components/map-embed";
 import { Button } from "@/components/button";
 import { MonogramWatermark } from "@/components/monogram";
+import { Accordion } from "@/components/accordion";
+import { SectionHeading } from "@/components/section-heading";
 import { BUSINESS, SITE_URL } from "@/lib/site";
+import { FAQ_ITEMS } from "@/lib/faq";
 
 export const metadata: Metadata = {
   title: "Visit Us | AG Liquidation Georgetown",
@@ -66,6 +69,13 @@ export default function ContactPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-[700px] px-6 lg:px-10">
+          <SectionHeading title="Common Questions" className="mb-12" />
+          <Accordion items={FAQ_ITEMS} idPrefix="contact-faq" />
         </div>
       </section>
 

@@ -1,3 +1,5 @@
+import { StaggerText } from "./stagger-text";
+
 interface SectionHeadingProps {
   eyebrow?: string;
   title: string;
@@ -15,7 +17,9 @@ export function SectionHeading({ eyebrow, title, align = "center", className = "
           {eyebrow}
         </span>
       )}
-      <h2 className="font-display text-h2 font-medium text-ink">{title}</h2>
+      <h2 className="font-display text-h2 font-medium text-ink">
+        <StaggerText text={title} />
+      </h2>
       <span className="h-[3px] w-16 rounded-full bg-gold" />
     </div>
   );

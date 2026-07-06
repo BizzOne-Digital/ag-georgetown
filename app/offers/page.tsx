@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PromotionCard } from "@/components/promotion-card";
 import { BundleCard } from "@/components/bundle-card";
 import { EmailCapture } from "@/components/email-capture";
+import { RedeemBand } from "@/components/redeem-band";
 import { SectionHeading } from "@/components/section-heading";
 import { ScrollReveal, RevealItem } from "@/components/scroll-reveal";
 import { Button } from "@/components/button";
@@ -28,6 +29,8 @@ export default function OffersPage() {
           </p>
         </div>
       </section>
+
+      <RedeemBand />
 
       {/* Current Promotions */}
       <section className="py-16">

@@ -3,8 +3,16 @@ import Image from "next/image";
 import { FacetedFrame } from "@/components/faceted-frame";
 import { StorefrontArt, PerfumeBottleArt, GiftSetArt, LipstickArt } from "@/components/placeholder-art";
 import { ValueRow } from "@/components/value-row";
+import { MilestonesTimeline } from "@/components/milestones-timeline";
+import { SectionHeading } from "@/components/section-heading";
 import { VisitUsSection } from "@/components/visit-us-section";
-import { AG_IMAGES } from "@/lib/images";
+import {
+  AG_ABOUT_HERO,
+  AG_ABOUT_AUTHENTICITY,
+  SKINCARE_ABOUT_ACCESSIBILITY,
+  MAKEUP_ABOUT_SELF_EXPRESSION,
+  FRAGRANCE_ABOUT_COMMUNITY,
+} from "@/lib/images";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -22,8 +30,8 @@ export default function AboutPage() {
           {/* TODO: replace with real storefront/interior photography from the client - using brand product photography as a stand-in for now */}
           <FacetedFrame className="bg-gradient-to-br from-gold-start/15 to-gold-end/25">
             <Image
-              src={AG_IMAGES[1].src}
-              alt={AG_IMAGES[1].alt}
+              src={AG_ABOUT_HERO.src}
+              alt={AG_ABOUT_HERO.alt}
               fill
               sizes="(max-width: 768px) 90vw, 45vw"
               className="object-contain p-10"
@@ -52,35 +60,55 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Milestones */}
+      <section className="bg-cream py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-10">
+          <SectionHeading eyebrow="Our Journey" title="Milestones" className="mb-16" />
+          {/* TODO: placeholder milestones - confirm real dates/details with the client before launch */}
+          <MilestonesTimeline />
+        </div>
+      </section>
+
       {/* Our values */}
       <section className="py-8">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <ValueRow
             Art={PerfumeBottleArt}
-            image={AG_IMAGES[0]}
+            image={AG_ABOUT_AUTHENTICITY}
             title="Authenticity"
             body="Every product verified and sourced properly, direct from official distributors - never gray-market, never guesswork."
           />
           <ValueRow
             Art={GiftSetArt}
-            image={AG_IMAGES[4]}
+            image={SKINCARE_ABOUT_ACCESSIBILITY}
             title="Accessibility"
             body="Beauty for every age, every budget - luxury made everyday, not reserved for special occasions."
             reverse
           />
           <ValueRow
             Art={LipstickArt}
-            image={AG_IMAGES[2]}
+            image={MAKEUP_ABOUT_SELF_EXPRESSION}
             title="Self-Expression"
             body="Pieces that help you look and feel like yourself, from routine days to special occasions."
           />
           <ValueRow
             Art={StorefrontArt}
-            image={AG_IMAGES[3]}
+            image={FRAGRANCE_ABOUT_COMMUNITY}
             title="Community"
             body="A local, personal shopping experience, not a warehouse aisle - our team gets to know what you love."
             reverse
           />
+        </div>
+      </section>
+
+      {/* In the Neighborhood */}
+      <section className="bg-gradient-to-br from-gold-start/10 to-gold-end/20 py-16 text-center">
+        <div className="mx-auto max-w-2xl px-6">
+          <h2 className="font-display text-h3 font-medium text-ink">In the Neighborhood</h2>
+          <p className="mt-4 font-body text-body text-ink/75">
+            Proud to be part of the Georgetown community, right on Guelph St. Stop by, say hello,
+            and let us help you find something that makes you feel like yourself.
+          </p>
         </div>
       </section>
 

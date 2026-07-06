@@ -3,6 +3,7 @@ import Script from "next/script";
 import { fraunces, inter } from "@/lib/fonts";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { PageTransition } from "@/components/page-transition";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -77,7 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-body text-ink">
         <Navbar />
-        <main>{children}</main>
+        <main>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
 
         {gaId && (
