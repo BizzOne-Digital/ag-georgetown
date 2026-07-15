@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { stripe } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { fulfillOrder } from "@/lib/orders/fulfill";
 import { getOrderByNumber } from "@/lib/repositories/order.repository";
 import { formatPrice } from "@/components/catalog/price-tag";
@@ -19,6 +19,8 @@ export default async function CheckoutSuccessPage({ searchParams }: CheckoutSucc
   const sessionId = searchParams.session_id;
   if (!sessionId) notFound();
 
+  // Constructed here, not at module scope - see lib/stripe.ts for why.
+  const stripe = getStripe();
   const session = await stripe.checkout.sessions.retrieve(sessionId);
   const orderNumber = session.metadata?.orderNumber ?? session.client_reference_id;
   if (!orderNumber) notFound();

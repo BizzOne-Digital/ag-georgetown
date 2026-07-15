@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Types } from "mongoose";
-import { stripe } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { getProductByIdRaw } from "@/lib/repositories/product.repository";
 import { findOrCreateGuestCustomer } from "@/lib/repositories/customer.repository";
 import { createOrder, attachStripeSessionToOrder } from "@/lib/repositories/order.repository";
@@ -134,6 +134,11 @@ export async function POST(request: Request) {
     console.error("Could not create order after retries:", lastError);
     return NextResponse.json({ error: "Could not start checkout. Please try again." }, { status: 500 });
   }
+
+  // Constructed here, not at module scope - see lib/stripe.ts for why
+  // (Vercel's build step imports every route module regardless of whether
+  // STRIPE_SECRET_KEY is configured in that environment yet).
+  const stripe = getStripe();
 
   // Pickup-only for now - no shipping_address_collection.
   const session = await stripe.checkout.sessions.create({
