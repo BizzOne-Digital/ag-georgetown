@@ -1,0 +1,625 @@
+{
+  "source": "https://agcosmetics.ca/",
+  "scrapedAt": "2026-07-09T17:37:05.503Z",
+  "totalItems": 8,
+  "items": [
+    {
+      "label": "About us",
+      "href": "https://agcosmetics.ca/pages/about-us",
+      "children": []
+    },
+    {
+      "label": "Brands",
+      "href": null,
+      "children": [
+        {
+          "label": "Afnan",
+          "href": "https://agcosmetics.ca/collections/afnan"
+        },
+        {
+          "label": "Armaf",
+          "href": "https://agcosmetics.ca/collections/armaf"
+        },
+        {
+          "label": "Aura",
+          "href": "https://agcosmetics.ca/collections/aura"
+        },
+        {
+          "label": "Burberry",
+          "href": "https://agcosmetics.ca/collections/burberry"
+        },
+        {
+          "label": "Bvlgari",
+          "href": "https://agcosmetics.ca/collections/bvlgari"
+        },
+        {
+          "label": "Calvin Klein",
+          "href": "https://agcosmetics.ca/collections/calvin-klein"
+        },
+        {
+          "label": "Carolina Herrera",
+          "href": "https://agcosmetics.ca/collections/carolina-herrera"
+        },
+        {
+          "label": "Coach",
+          "href": "https://agcosmetics.ca/collections/coach"
+        },
+        {
+          "label": "Dolce & Gabbana",
+          "href": "https://agcosmetics.ca/collections/dolce-gabbana"
+        },
+        {
+          "label": "Dior",
+          "href": "https://agcosmetics.ca/collections/dior"
+        },
+        {
+          "label": "Essie",
+          "href": "https://agcosmetics.ca/collections/essie"
+        },
+        {
+          "label": "Garnier",
+          "href": "https://agcosmetics.ca/collections/garnier"
+        },
+        {
+          "label": "Giorgio Armani",
+          "href": "https://agcosmetics.ca/collections/giorgio-armani"
+        },
+        {
+          "label": "Givenchy",
+          "href": "https://agcosmetics.ca/collections/givenchy"
+        },
+        {
+          "label": "Gucci",
+          "href": "https://agcosmetics.ca/collections/gucci"
+        },
+        {
+          "label": "Guess",
+          "href": "https://agcosmetics.ca/collections/guess"
+        },
+        {
+          "label": "Hugo Boss",
+          "href": "https://agcosmetics.ca/collections/boss"
+        },
+        {
+          "label": "Jean Paul Gauthier",
+          "href": "https://agcosmetics.ca/collections/jean-paul-gauthier"
+        },
+        {
+          "label": "Jimmy Choo",
+          "href": "https://agcosmetics.ca/collections/jimmy-choo"
+        },
+        {
+          "label": "Lattafa",
+          "href": "https://agcosmetics.ca/collections/lattafa"
+        },
+        {
+          "label": "Mont Blanc",
+          "href": "https://agcosmetics.ca/collections/mont-blanc"
+        },
+        {
+          "label": "MAC Cosmetics",
+          "href": "https://agcosmetics.ca/collections/mac-cosmetics"
+        },
+        {
+          "label": "Nars",
+          "href": "https://agcosmetics.ca/collections/nars"
+        },
+        {
+          "label": "Paco Rabanne",
+          "href": "https://agcosmetics.ca/collections/paco-rabanne"
+        },
+        {
+          "label": "Tarte",
+          "href": "https://agcosmetics.ca/collections/tarte"
+        },
+        {
+          "label": "Tom Ford",
+          "href": "https://agcosmetics.ca/collections/tom-ford"
+        },
+        {
+          "label": "Too Faced",
+          "href": "https://agcosmetics.ca/collections/too-faced"
+        },
+        {
+          "label": "Urban Decay",
+          "href": "https://agcosmetics.ca/collections/urban-decay"
+        },
+        {
+          "label": "Versace",
+          "href": "https://agcosmetics.ca/collections/versace"
+        },
+        {
+          "label": "Valentino",
+          "href": "https://agcosmetics.ca/collections/valentino"
+        },
+        {
+          "label": "YSL",
+          "href": "https://agcosmetics.ca/collections/ysl"
+        }
+      ]
+    },
+    {
+      "label": "Fragrance",
+      "href": "https://agcosmetics.ca/collections/fragrance",
+      "children": [
+        {
+          "label": "Popular",
+          "href": null,
+          "children": [
+            {
+              "label": "Bestseller",
+              "href": "https://agcosmetics.ca/collections/bestseller-fragrance"
+            },
+            {
+              "label": "Women’s Fragrance",
+              "href": "https://agcosmetics.ca/collections/womens-perfume"
+            },
+            {
+              "label": "Men’s Fragrance",
+              "href": "https://agcosmetics.ca/collections/mens-perfume"
+            },
+            {
+              "label": "Dubai & Arabian Scents",
+              "href": "https://agcosmetics.ca/collections/dubai-arabian-scents"
+            },
+            {
+              "label": "Body & Hygiene",
+              "href": "https://agcosmetics.ca/collections/body-hygiene"
+            },
+            {
+              "label": "Gift Sets & Bundles",
+              "href": "https://agcosmetics.ca/collections/gift-sets"
+            },
+            {
+              "label": "Unboxed/Testers",
+              "href": "https://agcosmetics.ca/collections/unboxed-testers"
+            },
+            {
+              "label": "Clearance",
+              "href": "https://agcosmetics.ca/collections/clearance"
+            },
+            {
+              "label": "New Arrivals",
+              "href": "https://agcosmetics.ca/collections/new-fragrance"
+            }
+          ]
+        },
+        {
+          "label": "Type",
+          "href": null,
+          "children": [
+            {
+              "label": "Parfum / Extrait",
+              "href": "https://agcosmetics.ca/collections/parfum-extrait"
+            },
+            {
+              "label": "Eau de Parfum",
+              "href": "https://agcosmetics.ca/collections/eau-de-parfum"
+            },
+            {
+              "label": "Eau de Toilette",
+              "href": "https://agcosmetics.ca/collections/eau-de-toilette"
+            },
+            {
+              "label": "Concentrated Perfume Oils",
+              "href": "https://agcosmetics.ca/collections/perfume-oils"
+            }
+          ]
+        },
+        {
+          "label": "Body & Hygiene",
+          "href": null,
+          "children": [
+            {
+              "label": "Deodorant Sprays",
+              "href": "https://agcosmetics.ca/collections/body-sprays-deodorants"
+            },
+            {
+              "label": "Antiperspirant Roll-ons",
+              "href": "https://agcosmetics.ca/collections/antiperspirant-roll-ons"
+            },
+            {
+              "label": "Scented Body Lotions",
+              "href": "https://agcosmetics.ca/collections/scented-body-lotions"
+            },
+            {
+              "label": "Hair & Body Mists",
+              "href": "https://agcosmetics.ca/collections/hair-body-mists"
+            }
+          ]
+        },
+        {
+          "label": "Price",
+          "href": null,
+          "children": [
+            {
+              "label": "Under  $30",
+              "href": "https://agcosmetics.ca/collections/fragrance?sort_by=title-ascending&filter.v.price.gte=0&filter.v.price.lte=30"
+            },
+            {
+              "label": "$30 – $50",
+              "href": "https://agcosmetics.ca/collections/fragrance?sort_by=title-ascending&filter.v.price.gte=30&filter.v.price.lte=50"
+            },
+            {
+              "label": "$50 – $70",
+              "href": "https://agcosmetics.ca/collections/fragrance?sort_by=title-ascending&filter.v.price.gte=50&filter.v.price.lte=70"
+            },
+            {
+              "label": "$70 – $100",
+              "href": "https://agcosmetics.ca/collections/fragrance?sort_by=title-ascending&filter.v.price.gte=70&filter.v.price.lte=100"
+            },
+            {
+              "label": "$100+",
+              "href": "https://agcosmetics.ca/collections/fragrance?sort_by=title-ascending&filter.v.price.gte=100&filter.v.price.lte="
+            }
+          ]
+        },
+        {
+          "label": "Scent Family",
+          "href": null,
+          "children": [
+            {
+              "label": "Floral",
+              "href": "https://agcosmetics.ca/collections/floral"
+            },
+            {
+              "label": "Warm & Spicy",
+              "href": "https://agcosmetics.ca/collections/warm-spicy"
+            },
+            {
+              "label": "Fresh",
+              "href": "https://agcosmetics.ca/collections/fresh"
+            },
+            {
+              "label": "Earthy & woody",
+              "href": "https://agcosmetics.ca/collections/earthy-woody"
+            }
+          ]
+        },
+        {
+          "label": "Featured Brands",
+          "href": null,
+          "children": [
+            {
+              "label": "Dolce & Gabbana",
+              "href": "https://agcosmetics.ca/collections/dolce-gabbana"
+            },
+            {
+              "label": "Versace",
+              "href": "https://agcosmetics.ca/collections/versace"
+            },
+            {
+              "label": "Lattafa",
+              "href": "https://agcosmetics.ca/collections/lattafa"
+            },
+            {
+              "label": "Afnan",
+              "href": "https://agcosmetics.ca/collections/afnan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Skincare",
+      "href": "https://agcosmetics.ca/collections/skincare",
+      "children": [
+        {
+          "label": "Moisturizers",
+          "href": "https://agcosmetics.ca/collections/moisturizers",
+          "children": [
+            {
+              "label": "Face Creams",
+              "href": "https://agcosmetics.ca/collections/face-creams"
+            },
+            {
+              "label": "Night Creams",
+              "href": "https://agcosmetics.ca/collections/night-creams"
+            },
+            {
+              "label": "Face Oils",
+              "href": "https://agcosmetics.ca/collections/face-oils"
+            },
+            {
+              "label": "Mists & Essences",
+              "href": "https://agcosmetics.ca/collections/mists-essences"
+            },
+            {
+              "label": "BB & CC Cream",
+              "href": "https://agcosmetics.ca/collections/bb-cc-cream"
+            }
+          ]
+        },
+        {
+          "label": "Cleansers",
+          "href": "https://agcosmetics.ca/collections/cleansers",
+          "children": [
+            {
+              "label": "Face Wash & Cleansers",
+              "href": "https://agcosmetics.ca/collections/face-wash"
+            },
+            {
+              "label": "Face Wipes",
+              "href": "https://agcosmetics.ca/collections/face-wipes"
+            },
+            {
+              "label": "Makeup Removers",
+              "href": "https://agcosmetics.ca/collections/makeup-removers"
+            }
+          ]
+        },
+        {
+          "label": "Treatments",
+          "href": "https://agcosmetics.ca/collections/treatments",
+          "children": [
+            {
+              "label": "Face Serums",
+              "href": "https://agcosmetics.ca/collections/face-serums"
+            },
+            {
+              "label": "Acne & Blemish Treatments",
+              "href": "https://agcosmetics.ca/collections/acne-blemish-treatments"
+            }
+          ]
+        },
+        {
+          "label": "Masks",
+          "href": "https://agcosmetics.ca/collections/masks",
+          "children": [
+            {
+              "label": "Face Masks",
+              "href": "https://agcosmetics.ca/collections/face-masks"
+            },
+            {
+              "label": "Sheet Masks",
+              "href": "https://agcosmetics.ca/collections/sheet-masks"
+            },
+            {
+              "label": "Eye Masks",
+              "href": "https://agcosmetics.ca/collections/eye-masks"
+            }
+          ]
+        },
+        {
+          "label": "Sunscreen",
+          "href": "https://agcosmetics.ca/collections/sunscreen",
+          "children": [
+            {
+              "label": "Face Sunscreen",
+              "href": "https://agcosmetics.ca/collections/face-sunscreen"
+            },
+            {
+              "label": "Body Sunscreen",
+              "href": "https://agcosmetics.ca/collections/body-sunscreen"
+            }
+          ]
+        },
+        {
+          "label": "Body Care",
+          "href": null,
+          "children": [
+            {
+              "label": "Body Cream",
+              "href": "https://agcosmetics.ca/collections/body-cream"
+            },
+            {
+              "label": "Body Wash",
+              "href": "https://agcosmetics.ca/collections/body-wash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Cosmetics",
+      "href": "https://agcosmetics.ca/collections/cosmetics",
+      "children": [
+        {
+          "label": "Face",
+          "href": "https://agcosmetics.ca/collections/face",
+          "children": [
+            {
+              "label": "Foundation",
+              "href": "https://agcosmetics.ca/collections/foundation"
+            },
+            {
+              "label": "BB & CC Cream",
+              "href": "https://agcosmetics.ca/collections/bb-cc-cream"
+            },
+            {
+              "label": "Concealer",
+              "href": "https://agcosmetics.ca/collections/concealer"
+            },
+            {
+              "label": "Tinted Moisturizer",
+              "href": "https://agcosmetics.ca/collections/tinted-moisturizer"
+            },
+            {
+              "label": "Face Primer",
+              "href": "https://agcosmetics.ca/collections/face-primer"
+            },
+            {
+              "label": "Setting Spray & Powder",
+              "href": "https://agcosmetics.ca/collections/setting-spray-powder"
+            },
+            {
+              "label": "Highlighter",
+              "href": "https://agcosmetics.ca/collections/highlighter"
+            },
+            {
+              "label": "Contour",
+              "href": "https://agcosmetics.ca/collections/contour"
+            },
+            {
+              "label": "Blush",
+              "href": "https://agcosmetics.ca/collections/blush"
+            },
+            {
+              "label": "Bronzer",
+              "href": "https://agcosmetics.ca/collections/bronzer"
+            }
+          ]
+        },
+        {
+          "label": "Eyes",
+          "href": "https://agcosmetics.ca/collections/eyes",
+          "children": [
+            {
+              "label": "Mascara",
+              "href": "https://agcosmetics.ca/collections/mascara"
+            },
+            {
+              "label": "Eyeliner",
+              "href": "https://agcosmetics.ca/collections/eyeliner"
+            },
+            {
+              "label": "Eye Shadow",
+              "href": "https://agcosmetics.ca/collections/eyeshadow"
+            },
+            {
+              "label": "Eyeshadow Palettes",
+              "href": "https://agcosmetics.ca/collections/eyeshadow-palettes"
+            },
+            {
+              "label": "False Eyelashes",
+              "href": "https://agcosmetics.ca/collections/false-eyelashes"
+            },
+            {
+              "label": "Eye Palettes",
+              "href": "https://agcosmetics.ca/collections/eye-palettes"
+            }
+          ]
+        },
+        {
+          "label": "Lips",
+          "href": "https://agcosmetics.ca/collections/lips",
+          "children": [
+            {
+              "label": "Lipstick",
+              "href": "https://agcosmetics.ca/collections/lipsticks"
+            },
+            {
+              "label": "Lip Gloss",
+              "href": "https://agcosmetics.ca/collections/lip-gloss"
+            },
+            {
+              "label": "Lip Oil / Lip Balm",
+              "href": "https://agcosmetics.ca/collections/lip-balm"
+            },
+            {
+              "label": "Liquid Lipstick",
+              "href": "https://agcosmetics.ca/collections/liquid-lipsticks"
+            },
+            {
+              "label": "Lip Liner",
+              "href": "https://agcosmetics.ca/collections/lip-liners"
+            }
+          ]
+        },
+        {
+          "label": "Tools & Accessories",
+          "href": "https://agcosmetics.ca/collections/tools-accessories",
+          "children": [
+            {
+              "label": "Brushes",
+              "href": "https://agcosmetics.ca/collections/brushes"
+            },
+            {
+              "label": "Sponges & Applicators",
+              "href": "https://agcosmetics.ca/collections/sponges-applicators"
+            },
+            {
+              "label": "Makeup Tools",
+              "href": "https://agcosmetics.ca/collections/makeup-tools"
+            }
+          ]
+        },
+        {
+          "label": "Sets & Palettes",
+          "href": "https://agcosmetics.ca/collections/sets-palettes",
+          "children": [
+            {
+              "label": "Makeup Palettes",
+              "href": "https://agcosmetics.ca/collections/makeup-palettes"
+            },
+            {
+              "label": "Values & Gift Sets",
+              "href": "https://agcosmetics.ca/collections/values-gift-sets"
+            }
+          ]
+        },
+        {
+          "label": "Nails",
+          "href": "https://agcosmetics.ca/collections/nails",
+          "children": [
+            {
+              "label": "Nail Polish",
+              "href": "https://agcosmetics.ca/collections/nail-polish"
+            },
+            {
+              "label": "Nail Accessories",
+              "href": "https://agcosmetics.ca/collections/nail-accessories"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Hair Care",
+      "href": "https://agcosmetics.ca/collections/hair-care",
+      "children": [
+        {
+          "label": "Dry Shampoo",
+          "href": "https://agcosmetics.ca/collections/dry-shampoo"
+        },
+        {
+          "label": "Goody",
+          "href": "https://agcosmetics.ca/collections/goody"
+        },
+        {
+          "label": "Hair Clips",
+          "href": "https://agcosmetics.ca/collections/hair-clips"
+        },
+        {
+          "label": "Hair Colour",
+          "href": "https://agcosmetics.ca/collections/hair-colour"
+        },
+        {
+          "label": "Hair Masks & Treatment",
+          "href": "https://agcosmetics.ca/collections/hair-masks-treatment"
+        },
+        {
+          "label": "Hair Oils And Mists",
+          "href": "https://agcosmetics.ca/collections/hair-oils-and-mists"
+        },
+        {
+          "label": "Hair Spray",
+          "href": "https://agcosmetics.ca/collections/hair-spray"
+        },
+        {
+          "label": "Conditioner",
+          "href": "https://agcosmetics.ca/collections/conditioner"
+        },
+        {
+          "label": "Shampoo",
+          "href": "https://agcosmetics.ca/collections/shampoo"
+        }
+      ]
+    },
+    {
+      "label": "Offers",
+      "href": "https://agcosmetics.ca/collections/offers",
+      "children": [
+        {
+          "label": "Clearance Deals",
+          "href": "https://agcosmetics.ca/collections/clearance"
+        }
+      ]
+    },
+    {
+      "label": "Wholesale",
+      "href": "https://agcosmetics.ca/pages/contact-us",
+      "children": []
+    }
+  ]
+}

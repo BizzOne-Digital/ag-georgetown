@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-07-09T19:24:39.766Z",
+  "source": "data/scraped/navigation.json",
+  "note": "Only page references discovered via the nav menu are listed here. Page body content was not scraped - fetch each sourceUrl separately before import.",
+  "totalPages": 2,
+  "pages": [
+    {
+      "slug": "about-us",
+      "title": "About us",
+      "sourceUrl": "https://agcosmetics.ca/pages/about-us",
+      "content": null
+    },
+    {
+      "slug": "contact-us",
+      "title": "Wholesale",
+      "sourceUrl": "https://agcosmetics.ca/pages/contact-us",
+      "content": null
+    }
+  ]
+}

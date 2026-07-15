@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-07-10T13:20:23.552Z",
+  "basedOnValidationReport": "data/reports/validation-report.json",
+  "rulesApplied": [
+    "Generate unique slugs if duplicates exist.",
+    "Assign uncategorized/dangling-category products to an 'Uncategorized' category.",
+    "Preserve original Shopify product IDs.",
+    "Preserve original image URLs.",
+    "Do not fabricate prices.",
+    "Do not fabricate stock quantities."
+  ],
+  "summary": {
+    "slugsRenamed": 0,
+    "productsReassignedToCategory": 9,
+    "uncategorizedCategoryCreated": false,
+    "uncategorizedCategoryWasRealShopifyCollection": true,
+    "uncategorizedCategoryProductCount": 9,
+    "navigationChanges": 0,
+    "issuesNotAutoFixed": 168
+  },
+  "changes": {
+    "slugRenames": [],
+    "categoryReassignments": [
+      {
+        "id": 7606540992579,
+        "title": "Rihanna Reb'L Fleur For Women Eau de Parfum",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7606539747395,
+        "title": "YSL MYSLF Eau de Parfum 2PCS Gift Set - - 100ml Eau de Parfum Spray + 10ml Eau de Parfum Mini Spray",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7606431809603,
+        "title": "CeraVe Hydrating Mineral Sunscreen SPF 50 Body Lotion",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7604145291331,
+        "title": "Hummer Yellow Eau de Toilette Spray for Men",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7590774472771,
+        "title": "Versace Bright Crystal for Women Eau De Toilette",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7590774440003,
+        "title": "Versace Bright Crystal Absolu for Women Eau De Parfum",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7590773915715,
+        "title": "RED DOOR 2PCS Gift Set - 100ml Eau de Parfum Spray + 30ml Eau de Parfum Spray",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7590773751875,
+        "title": "WHITE DIAMONDS ROUGE 2PCS Gift Set - 30ml Eau de Toilette Spray + 3.7ml Mini Spray",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      },
+      {
+        "id": 7590756515907,
+        "title": "Armani My Way Intense Eau de Parfum",
+        "oldCategory": "uncategorized",
+        "newCategory": "uncategorized",
+        "reason": "no product_type/tag matched a known category - confirmed fallback"
+      }
+    ],
+    "categoryAdditions": [],
+    "navigationChanges": []
+  },
+  "notAutoFixed": [
+    {
+      "check": "products-without-description",
+      "count": 36,
+      "reason": "Fixing this would mean fabricating an image or description that doesn't exist in the source data."
+    },
+    {
+      "check": "categories-needing-manual-mapping",
+      "count": 132,
+      "reason": "Taxonomy placement (merge, keep, or drop) requires human judgment, not an automatic fix."
+    }
+  ],
+  "guarantees": {
+    "productIdsPreserved": true,
+    "imageUrlsPreserved": true,
+    "pricesFabricated": false,
+    "stockFabricated": false
+  }
+}

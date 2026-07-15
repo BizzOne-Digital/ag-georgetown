@@ -1,0 +1,2217 @@
+{
+  "generatedAt": "2026-07-10T13:20:23.552Z",
+  "source": "data/categories.json",
+  "totalCategories": 220,
+  "fallbackCategoryCreated": false,
+  "categories": [
+    {
+      "id": 302384218179,
+      "slug": "acne-blemish-treatments",
+      "title": "Acne & Blemish Treatments",
+      "description": "",
+      "parentSlug": "treatments",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301903806531,
+      "slug": "afnan",
+      "title": "Afnan",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303176974403,
+      "slug": "ag-perfume-and-cosmetics",
+      "title": "Ag perfume and cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 12,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303527952451,
+      "slug": "al-haramain",
+      "title": "Al Haramain",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528902723,
+      "slug": "american-crew",
+      "title": "American Crew",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302253146179,
+      "slug": "antiperspirant-roll-ons",
+      "title": "Antiperspirant Roll-ons",
+      "description": "",
+      "parentSlug": "fragrance-body-hygiene",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302610939971,
+      "slug": "arabiyat-prestige",
+      "title": "Arabiyat Prestige",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301904166979,
+      "slug": "armaf",
+      "title": "Armaf",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 8,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303526346819,
+      "slug": "armani",
+      "title": "Armani",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301904199747,
+      "slug": "aura",
+      "title": "Aura Fragrances",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 15,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302549270595,
+      "slug": "aura-fragrances",
+      "title": "Aura Fragrances",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 11,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302771044419,
+      "slug": "axe",
+      "title": "AXE",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303527559235,
+      "slug": "bath-amp-body-works",
+      "title": "Bath &amp; Body Works",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860585539,
+      "slug": "bb-cc-cream",
+      "title": "BB & CC Cream",
+      "description": "",
+      "parentSlug": "moisturizers",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302929772611,
+      "slug": "bestseller-cosmetics",
+      "title": "Bestseller Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 8,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302929739843,
+      "slug": "bestseller-fragrance",
+      "title": "Bestseller Fragrance",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 22,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302929805379,
+      "slug": "bestseller-skincare",
+      "title": "Bestseller Skincare",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301827620931,
+      "slug": "bestsellers",
+      "title": "Bestsellers",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 61,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528542275,
+      "slug": "bio-oil",
+      "title": "Bio oil",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303069757507,
+      "slug": "bluma",
+      "title": "Bluma",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301859831875,
+      "slug": "blush",
+      "title": "Blush",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829816387,
+      "slug": "blush-highlighters",
+      "title": "Blush & Highlighters",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303067070531,
+      "slug": "body-cream",
+      "title": "Body Cream",
+      "description": "",
+      "parentSlug": "skincare-body-care",
+      "productCount": 5,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302252949571,
+      "slug": "body-hygiene",
+      "title": "Body & Hygiene",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829980227,
+      "slug": "body-sprays-deodorants",
+      "title": "Body Sprays / Deodorants",
+      "description": "",
+      "parentSlug": "fragrance-body-hygiene",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861503043,
+      "slug": "body-sunscreen",
+      "title": "Body Sunscreen",
+      "description": "",
+      "parentSlug": "sunscreen",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303067430979,
+      "slug": "body-wash",
+      "title": "Body Wash",
+      "description": "",
+      "parentSlug": "skincare-body-care",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904330819,
+      "slug": "boss",
+      "title": "Boss",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 7,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829947459,
+      "slug": "boxing-day",
+      "title": "Boxing Day",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 94,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": null,
+      "slug": "brands",
+      "title": "Brands",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 381,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": 301860782147,
+      "slug": "bronzer",
+      "title": "Bronzer",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861109827,
+      "slug": "brushes",
+      "title": "Brushes",
+      "description": "",
+      "parentSlug": "tools-accessories",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904363587,
+      "slug": "burberry",
+      "title": "Burberry",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 21,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904429123,
+      "slug": "bvlgari",
+      "title": "Bvlgari",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 8,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904494659,
+      "slug": "calvin-klein",
+      "title": "Calvin Klein",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 31,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904560195,
+      "slug": "carolina-herrera",
+      "title": "Carolina Herrera",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 11,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302541045827,
+      "slug": "cerave",
+      "title": "CeraVe",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 21,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302541176899,
+      "slug": "cetaphil",
+      "title": "Cetaphil",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301904625731,
+      "slug": "chanel",
+      "title": "Chanel",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 10,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303526903875,
+      "slug": "charlotte-tilbury",
+      "title": "Charlotte Tilbury",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 7,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301829423171,
+      "slug": "christmas-cosmetics-offers-page",
+      "title": "Christmas Cosmetics Offers Page",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 18,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301829849155,
+      "slug": "cleansers",
+      "title": "Cleansers",
+      "description": "",
+      "parentSlug": "skincare",
+      "productCount": 42,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828931651,
+      "slug": "clearance",
+      "title": "Clearance Deals",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 56,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904691267,
+      "slug": "coach",
+      "title": "Coach",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 23,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860126787,
+      "slug": "color-correcting",
+      "title": "Color Correcting",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860618307,
+      "slug": "concealer",
+      "title": "Concealer",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859274819,
+      "slug": "conditioner",
+      "title": "Conditioner",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 12,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860749379,
+      "slug": "contour",
+      "title": "Contour",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301827752003,
+      "slug": "cosmetics",
+      "title": "Cosmetics",
+      "description": "<h3 dir=\"ltr\"><span>Elevate Your Style with Top Cosmetics Brands at Affordable Prices</span></h3>\n<p dir=\"ltr\"><span>AG Perfume &amp; Cosmetics is your trusted destination in Canada for </span><span>premium, high-quality beauty products</span><span> that elevate your makeup routine. Whether you are a professional makeup artist or someone who enjoys experimenting with different styles. AG Perfume &amp; Cosmetics offers a wide range of </span><span>luxury makeup brands</span><span> that cater to every need. From everyday essentials to trendy looks, our collection of </span><span>unique cosmetic products</span><span> ensures you're always on top of the latest beauty trends.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Explore the Luxury Makeup Collection at AG Perfume &amp; Cosmetics</span></h3>\n<p dir=\"ltr\"><span>At AG Perfume &amp; Cosmetics, we bring you a carefully curated collection of </span><span>luxury makeup brands</span><span> that combine elegance with performance. Our products feature </span><span>premium formulas and long-lasting finishes</span><span>, allowing you to indulge in high-end beauty from the comfort of your home. Whether preparing for a special occasion or simply treating yourself, our Canadian customers can enjoy the finest </span><span>luxury cosmetics products online</span><span>.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>1. Eyes</span></h4>\n<p dir=\"ltr\"><span>The eyes are the focal point of any makeup look. Discover our wide selection of eyeshadow, palettes, and eyeliner categories, designed to help you create bold, natural, or glamorous styles. Crafted by </span><span>top luxury brands</span><span>, these high-pigment and long-wear options ensure your eyes remain captivating all day.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>2. Face</span></h4>\n<p dir=\"ltr\"><span>Achieving a flawless complexion starts with the right face products. Our face category includes foundations, highlighters, blush and masks that are formulated to smooth, perfect, and enhance your natural glow. These </span><span>top cosmetic products</span><span> provide long-lasting, skin-friendly results suitable for any occasion.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>3. Foundation</span></h4>\n<p dir=\"ltr\"><span>Foundation is the essential base for any makeup routine. Choose from a variety of finishes, including dewy, matte, full-coverage, and natural, designed to suit all skin types and tones. Canadians can easily </span><span>buy luxury cosmetics products online</span><span> and enjoy flawless, all-day wear.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>4. Highlighter</span></h4>\n<p dir=\"ltr\"><span>Add a luminous glow with our highlighter range. Whether you prefer subtle sheen or bold radiance, these products provide smooth, light-catching perfection, enhancing your natural features and creating a radiant finish.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>5. Lips</span></h4>\n<p dir=\"ltr\"><span>Complete your look with our lip category, featuring a variety of shades and finishes. From soft, everyday tones to bold statement colours, these </span><span>luxury lip products</span><span> deliver comfort, pigmentation, and long-lasting results, ensuring your lips stand out effortlessly.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>6. Nail Polish</span></h4>\n<p dir=\"ltr\"><span>A polished manicure completes any beauty routine. Our nail category offers </span><span>vibrant, long-lasting, chip-resistant shades</span><span> that provide smooth, flawless coverage. These </span><span>top cosmetics products</span><span> help you maintain a professional and stylish look from day to night.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Why Choose AG Perfume &amp; Cosmetics?</span></h3>\n<p dir=\"ltr\"><span>At AG Perfume &amp; Cosmetics, we are passionate about offering you the best in luxury beauty. Here’s why our customers trust us:</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Curated Selection of Luxury Makeup Brands:</span><span> We feature only the finest brands, chosen by beauty experts worldwide. Each brand is carefully selected to ensure authenticity, quality, and trendsetting innovation that Canadian beauty lovers can trust.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Seamless Online and in-store Shopping Experience:</span><span> Enjoy convenient cosmetics online and in-store shopping from the comfort of your home. Our website and stores are user-friendly, allowing you to browse categories, compare options, and complete purchases securely in just a few clicks.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>High-Quality Cosmetics:</span><span> Our unique cosmetics products are crafted with premium, skin-friendly ingredients that deliver superior results. These formulas are designed to perform beautifully, giving you long-lasting wear without compromising your skin’s health.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Fast and Secure Delivery:</span><span> Get your favourite beauty products quickly and safely anywhere in Canada. We partner with trusted shipping carriers to ensure every order arrives on time, intact, and ready to enjoy.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Affordable Luxury:</span><span> Access top-tier luxury cosmetics products online, or you can visit the store for the best experience to get the luxurious products at one place. We regularly offer promotions and exclusive deals so you can indulge in high-end beauty while staying budget-conscious.</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>Experience the perfect blend of quality, convenience, and style with AG Perfume &amp; Cosmetics, because every Canadian deserves luxury made accessible.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>How to Choose the Perfect Luxury Cosmetics for Your Skin and Style</span></h3>\n<p dir=\"ltr\"><span>Choosing the right products can make a remarkable difference in your beauty routine. At AG Perfume &amp; Cosmetics, we make it simple, enjoyable, and tailored to your personal style.</span></p>\n<h4 dir=\"ltr\">\n<span></span><br>\n</h4>\n<h4 dir=\"ltr\"><span>1. Identify Your Skin Type and Needs</span></h4>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Oily Skin:</span><span> Opt for oil-free, matte formulas for long-lasting results.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Dry Skin:</span><span> Hydrating products provide comfort and a natural glow.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Sensitive Skin:</span><span> Choose non-comedogenic, fragrance-free options from trusted brands.</span></p>\n</li>\n</ul>\n<h4 dir=\"ltr\">\n<span></span><br>\n</h4>\n<h4 dir=\"ltr\"><span>2. Start With Essentials</span></h4>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Foundation for a flawless base</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Eyeshadows, palettes, and eyeliners for versatile eye looks</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Lipsticks and glosses for every mood</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Highlighters for a natural glow</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Nail polishes to complete your style</span><span></span></p>\n</li>\n</ul>\n<h4 dir=\"ltr\">\n<span></span><br>\n</h4>\n<h4 dir=\"ltr\"><span>3. Consider Longevity and Quality</span></h4>\n<p dir=\"ltr\"><span>Investing in </span><span>luxury cosmetics products online</span><span> guarantees long-lasting performance, superior coverage, and skin-friendly ingredients that help you look your best all day.</span></p>\n<h4 dir=\"ltr\">\n<span></span><br>\n</h4>\n<h4 dir=\"ltr\"><span>4. Don’t Forget Your Personal Style</span></h4>\n<p dir=\"ltr\"><span>Whether your preference is bold and dramatic or soft and natural, choose </span><span>unique cosmetics products</span><span> that complement your lifestyle and personality.</span></p>\n<p dir=\"ltr\"><span>By following these steps, you can confidently </span><span>buy cosmetics online</span><span> from AG Perfume &amp; Cosmetics, knowing you’re choosing </span><span>top cosmetic products</span><span> that enhance your beauty effortlessly.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Ready to Elevate Your Beauty Routine with Luxurious Products at Affordable Prices</span></h3>\n<p dir=\"ltr\"><span>AG Perfume &amp; Cosmetics provides Canadians with everything needed to build a complete luxury beauty collection. Whether shopping online at agcosmetics.ca or visiting our Brampton store, you will find luxury makeup brands and top cosmetics products that help you look and feel your best every day.</span></p>\n<p dir=\"ltr\"><span>Shop Now and Discover Your Perfect Beauty Match!</span></p>\n<h4 dir=\"ltr\"><br></h4>\n<h3 dir=\"ltr\">\n<span>FAQs</span><span></span>\n</h3>\n<p dir=\"ltr\" role=\"presentation\"><strong>1. What are the best cosmetic products for sensitive skin?</strong></p>\n<p dir=\"ltr\"><span>AG Perfume &amp; Cosmetics offers a range of products specifically formulated for sensitive skin, including non-comedogenic foundations and gentle eyeshadows.</span></p>\n<p dir=\"ltr\" role=\"presentation\"><strong>2. Can I buy luxury cosmetics products online from AG Perfume &amp; Cosmetics?</strong></p>\n<p dir=\"ltr\"><span>Yes, we offer a wide selection of luxury cosmetics products that you can easily purchase online.</span></p>\n<p dir=\"ltr\" role=\"presentation\"><strong>3. Do you offer international shipping?</strong></p>\n<p dir=\"ltr\"><span>Yes, we offer international shipping so that beauty lovers worldwide can enjoy our luxury makeup products.</span></p>\n<p dir=\"ltr\" role=\"presentation\"><strong>4. Are the cosmetics tested on animals?</strong></p>\n<p dir=\"ltr\"><span>We offer cruelty-free products from brands that do not test on animals.</span></p>\n<p dir=\"ltr\" role=\"presentation\"><strong>5. How can I find my perfect foundation shade?</strong></p>\n<p dir=\"ltr\"><span>AG Perfume &amp; Cosmetics provides detailed shade guides to help you find the perfect foundation for your skin tone.</span></p>\n<p dir=\"ltr\" role=\"presentation\"><strong>6. How can I track my cosmetics order?</strong></p>\n<p dir=\"ltr\"><span>Once your order is shipped, you'll receive a tracking number to monitor its status.</span></p>\n<p dir=\"ltr\" role=\"presentation\"><strong>7. Do you offer any discounts on cosmetics?</strong></p>\n<p dir=\"ltr\"><span>Yes, we regularly offer promotions and discounts on </span><span>top cosmetic products</span><span>.</span></p>\n<p> </p>",
+      "parentSlug": null,
+      "productCount": 131,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303060811843,
+      "slug": "cosmo-cosmetics",
+      "title": "Cosmo Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528214595,
+      "slug": "david-beckham",
+      "title": "David Beckham",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302773108803,
+      "slug": "davidoff",
+      "title": "Davidoff",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301904789571,
+      "slug": "dior",
+      "title": "Dior",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 18,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303699460163,
+      "slug": "dior-1",
+      "title": "Dior",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 18,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303215738947,
+      "slug": "discount-eligible",
+      "title": "Discount Eligible",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 614,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301904724035,
+      "slug": "dolce-gabbana",
+      "title": "Dolce & Gabbana",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303218950211,
+      "slug": "dove",
+      "title": "Dove",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301858914371,
+      "slug": "dry-shampoo",
+      "title": "Dry Shampoo",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302252884035,
+      "slug": "dubai-arabian-scents",
+      "title": "Dubai & Arabian Scents",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 22,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302818623555,
+      "slug": "e-l-f-cosmetics",
+      "title": "E.L.F. Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 8,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302253572163,
+      "slug": "earthy-woody",
+      "title": "Earthy & woody",
+      "description": "",
+      "parentSlug": "fragrance-scent-family",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302253080643,
+      "slug": "eau-de-parfum",
+      "title": "Eau de Parfum",
+      "description": "",
+      "parentSlug": "fragrance-type",
+      "productCount": 214,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302253113411,
+      "slug": "eau-de-toilette",
+      "title": "Eau de Toilette",
+      "description": "",
+      "parentSlug": "fragrance-type",
+      "productCount": 125,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859373123,
+      "slug": "elixir",
+      "title": "Elixir",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528607811,
+      "slug": "elizabeth-arden",
+      "title": "Elizabeth Arden",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302635974723,
+      "slug": "elizabeth-taylor",
+      "title": "Elizabeth Taylor",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528280131,
+      "slug": "english-laundry",
+      "title": "English Laundry",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301904855107,
+      "slug": "essie",
+      "title": "Essie",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861404739,
+      "slug": "eye-masks",
+      "title": "Eye Masks",
+      "description": "",
+      "parentSlug": "masks",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860913219,
+      "slug": "eye-palettes",
+      "title": "Eye Palettes",
+      "description": "",
+      "parentSlug": "eyes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860159555,
+      "slug": "eyelashes",
+      "title": "Eyelashes",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860192323,
+      "slug": "eyelashes-eye-accessories",
+      "title": "Eyelashes & Eye Accessories",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860847683,
+      "slug": "eyeliner",
+      "title": "Eyeliner",
+      "description": "",
+      "parentSlug": "eyes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828276291,
+      "slug": "eyes",
+      "title": "Eyes",
+      "description": "",
+      "parentSlug": "cosmetics",
+      "productCount": 14,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829488707,
+      "slug": "eyeshadow",
+      "title": "Eyeshadow",
+      "description": "",
+      "parentSlug": "eyes",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860421699,
+      "slug": "eyeshadow-palettes",
+      "title": "Eyeshadow Palettes",
+      "description": "",
+      "parentSlug": "eyes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828210755,
+      "slug": "face",
+      "title": "Face",
+      "description": "",
+      "parentSlug": "cosmetics",
+      "productCount": 43,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302383759427,
+      "slug": "face-creams",
+      "title": "Face Creams",
+      "description": "",
+      "parentSlug": "moisturizers",
+      "productCount": 5,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828964419,
+      "slug": "face-masks",
+      "title": "Face Masks",
+      "description": "Face Masks for Every Skin Type and Concern<br>Give your skin the care it needs with our carefully selected range of face masks. Whether you're looking to deeply cleanse, hydrate, brighten, or calm your skin, we have the perfect mask for your skincare goals.<br><br>Our collection includes a wide variety of formulas such as:<br><br>Clay masks to detox and absorb excess oil<br><br>Hydrating masks with hyaluronic acid and aloe vera<br><br>Sheet masks for instant nourishment and glow<br><br>Peel-off masks to refresh and refine pores<br><br>Overnight masks that work while you sleep<br><br>Made with skin-loving ingredients like charcoal, vitamin C, green tea, and botanical extracts, our face masks are suitable for all skin types—including sensitive, oily, dry, and combination skin.<br><br>Use weekly or as needed to maintain healthy, glowing skin. Whether it’s a quick pick-me-up or part of your self-care ritual, a face mask can make all the difference.",
+      "parentSlug": "masks",
+      "productCount": 11,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302383824963,
+      "slug": "face-oils",
+      "title": "Face Oils",
+      "description": "",
+      "parentSlug": "moisturizers",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860683843,
+      "slug": "face-primer",
+      "title": "Face Primer",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302384087107,
+      "slug": "face-serums",
+      "title": "Face Serums",
+      "description": "",
+      "parentSlug": "treatments",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861470275,
+      "slug": "face-sunscreen",
+      "title": "Face Sunscreen",
+      "description": "",
+      "parentSlug": "sunscreen",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829881923,
+      "slug": "face-wash",
+      "title": "Face Wash",
+      "description": "",
+      "parentSlug": "cleansers",
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861339203,
+      "slug": "face-wipes",
+      "title": "Face Wipes",
+      "description": "",
+      "parentSlug": "cleansers",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860880451,
+      "slug": "false-eyelashes",
+      "title": "False Eyelashes",
+      "description": "",
+      "parentSlug": "eyes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302253310019,
+      "slug": "floral",
+      "title": "Floral",
+      "description": "",
+      "parentSlug": "fragrance-scent-family",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828243523,
+      "slug": "foundation",
+      "title": "Foundations",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 17,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828145219,
+      "slug": "fragrance",
+      "title": "Fragrance",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 311,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "fragrance-body-hygiene",
+      "title": "Body & Hygiene",
+      "description": "",
+      "parentSlug": "fragrance",
+      "productCount": 6,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "fragrance-featured-brands",
+      "title": "Featured Brands",
+      "description": "",
+      "parentSlug": "fragrance",
+      "productCount": 0,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "fragrance-popular",
+      "title": "Popular",
+      "description": "",
+      "parentSlug": "fragrance",
+      "productCount": 688,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "fragrance-price",
+      "title": "Price",
+      "description": "",
+      "parentSlug": "fragrance",
+      "productCount": 0,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "fragrance-scent-family",
+      "title": "Scent Family",
+      "description": "",
+      "parentSlug": "fragrance",
+      "productCount": 7,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "fragrance-type",
+      "title": "Type",
+      "description": "",
+      "parentSlug": "fragrance",
+      "productCount": 345,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": 303526707267,
+      "slug": "french-avenue",
+      "title": "French Avenue",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302253539395,
+      "slug": "fresh",
+      "title": "Fresh",
+      "description": "",
+      "parentSlug": "fragrance-scent-family",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301904986179,
+      "slug": "garnier",
+      "title": "Garnier",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 28,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303698870339,
+      "slug": "garnier-1",
+      "title": "Garnier",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 28,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301827686467,
+      "slug": "gift-sets",
+      "title": "Gift Sets",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 49,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905117251,
+      "slug": "giorgio-armani",
+      "title": "Giorgio Armani",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 15,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302539669571,
+      "slug": "giorgio-armani-1",
+      "title": "Giorgio Armani",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 16,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302951333955,
+      "slug": "giorgio-armani-2",
+      "title": "Giorgio Armani",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 15,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301905215555,
+      "slug": "givenchy",
+      "title": "Givenchy",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 10,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301858947139,
+      "slug": "goody",
+      "title": "Goody",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905281091,
+      "slug": "gucci",
+      "title": "Gucci",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 12,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905379395,
+      "slug": "guess",
+      "title": "Guess",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 16,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302771470403,
+      "slug": "guess-1",
+      "title": "Guess",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 16,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302253244483,
+      "slug": "hair-body-mists",
+      "title": "Hair & Body Mists",
+      "description": "",
+      "parentSlug": "fragrance-body-hygiene",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301827850307,
+      "slug": "hair-care",
+      "title": "Hair Care",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 34,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301858979907,
+      "slug": "hair-clips",
+      "title": "Hair Clips",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859176515,
+      "slug": "hair-colour",
+      "title": "Hair Colour",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301828079683,
+      "slug": "hair-masks-treatment",
+      "title": "Hair Masks & Treatment",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859209283,
+      "slug": "hair-oils-and-mists",
+      "title": "Hair Oils And Mists",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859242051,
+      "slug": "hair-spray",
+      "title": "Hair Spray",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302636466243,
+      "slug": "hermes",
+      "title": "HERMÈS",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 5,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301859471427,
+      "slug": "highlighter",
+      "title": "Highlighter",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303526576195,
+      "slug": "huda-beauty",
+      "title": "Huda Beauty",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302952775747,
+      "slug": "hummer",
+      "title": "Hummer",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301905412163,
+      "slug": "jean-paul-gauthier",
+      "title": "Jean Paul Gauthier",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 9,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905444931,
+      "slug": "jimmy-choo",
+      "title": "Jimmy Choo",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 16,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302541013059,
+      "slug": "kiehls",
+      "title": "Kiehl's",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301905477699,
+      "slug": "lattafa",
+      "title": "Lattafa",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 16,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302492188739,
+      "slug": "lattafa-1",
+      "title": "Lattafa",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 16,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528509507,
+      "slug": "le-falcone",
+      "title": "Le Falcone",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860290627,
+      "slug": "lip-balm",
+      "title": "Lip Balm",
+      "description": "",
+      "parentSlug": "lips",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860257859,
+      "slug": "lip-gloss",
+      "title": "Lip Gloss",
+      "description": "Shop our collection of high-shine Lip Glosses. From sheer tints to high-pigment liquid lip creams, find non-sticky, hydrating formulas for the perfect pout. Fast Shipping!",
+      "parentSlug": "lips",
+      "productCount": 8,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859799107,
+      "slug": "lip-liners",
+      "title": "Lip Liners",
+      "description": "",
+      "parentSlug": "lips",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860323395,
+      "slug": "lip-oil",
+      "title": "Lip Oil",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301859995715,
+      "slug": "lip-palette",
+      "title": "Lip Palette",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301828112451,
+      "slug": "lips",
+      "title": "Lips",
+      "description": "",
+      "parentSlug": "cosmetics",
+      "productCount": 56,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829587011,
+      "slug": "lipsticks",
+      "title": "Lipsticks",
+      "description": "",
+      "parentSlug": "lips",
+      "productCount": 20,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859668035,
+      "slug": "liquid-lipsticks",
+      "title": "Liquid Lipsticks",
+      "description": "",
+      "parentSlug": "lips",
+      "productCount": 17,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302541340739,
+      "slug": "loreal",
+      "title": "L'Oréal",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 30,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303526281283,
+      "slug": "loreal-paris",
+      "title": "L'Oréal Paris",
+      "description": "<p><br></p>",
+      "parentSlug": null,
+      "productCount": 14,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301827653699,
+      "slug": "luxury",
+      "title": "Luxury",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 38,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302238007363,
+      "slug": "mac-cosmetics",
+      "title": "MAC Cosmetics",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302898806851,
+      "slug": "mac-cosmetics-1",
+      "title": "MAC Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302525579331,
+      "slug": "make-up-for-ever",
+      "title": "Make Up For Ever",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301861142595,
+      "slug": "makeup-palettes",
+      "title": "Makeup Palettes",
+      "description": "",
+      "parentSlug": "sets-palettes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861240899,
+      "slug": "makeup-removers",
+      "title": "Makeup Removers",
+      "description": "",
+      "parentSlug": "cleansers",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861044291,
+      "slug": "makeup-tools",
+      "title": "Makeup Tools",
+      "description": "",
+      "parentSlug": "tools-accessories",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303527886915,
+      "slug": "marc-anthony",
+      "title": "Marc Anthony",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860814915,
+      "slug": "mascara",
+      "title": "Mascara",
+      "description": "",
+      "parentSlug": "eyes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301829914691,
+      "slug": "masks",
+      "title": "Masks",
+      "description": "",
+      "parentSlug": "skincare",
+      "productCount": 11,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303526412355,
+      "slug": "maybelline",
+      "title": "Maybelline",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 15,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303014641731,
+      "slug": "maybelline-new-york",
+      "title": "Maybelline New York",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 15,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301828702275,
+      "slug": "mens-giftset",
+      "title": "Men's Giftset",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 43,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301827588163,
+      "slug": "mens-perfume",
+      "title": "Men’s Perfume",
+      "description": "<div class=\"onsite-description\">\n<h3 dir=\"ltr\"><span>Shop the Best Perfume for Men – Designed to Inspire Confidence, Class &amp; Charisma</span></h3>\n<p dir=\"ltr\"><span>Perfume is an expression of your presence, personality, and power. Whether you're walking into a boardroom or off to a date night, the </span><span>best perfume for men</span><span> can make every moment better.</span><b></b></p>\n<p dir=\"ltr\"><span>The AG Perfumes &amp; Cosmetics collection of </span><span>luxury men's fragrances</span><span> is handpicked to meet the varied preferences of today's man, ranging from strong, discreet, musky, or fresh fragrances. Discover classic and modern favourites from the world's top fragrance designers now readily accessible to you.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Why Select AG Perfumes &amp; Cosmetics for Men's Fragrances?</span></h3>\n<p dir=\"ltr\"><span>We're a reputable Canadian distributor committed to quality, value, and authenticity. Here's why we stand out:</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>Exclusive Access to Leading Fragrances for Men</span></h4>\n<p dir=\"ltr\"><span>Buy an expertly selected selection of </span><span>top fragrances for men</span><span> that make a lasting impression. From lasting oud-based scents to fresh, aquatic fragrances, we have premium options for every style and every season.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>Genuine Products at Competitive Prices</span></h4>\n<p dir=\"ltr\"><span>Our guarantee? 100% genuine fragrances. We buy directly from trusted sources, ensuring luxury, performance, and long life in every bottle.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>Fast &amp; Secure Shopping Experience</span></h4>\n<p dir=\"ltr\"><span>Conveniently </span><span>buy perfume for him</span><span> with an intuitive interface, safe checkout, and caring customer service, for yourself or as a gift.</span></p>\n<p dir=\"ltr\"> </p>\n<h4 dir=\"ltr\"><span>Early Bird Offer</span></h4>\n<p dir=\"ltr\"><span>We value our early shoppers. Receive an exclusive 10% off your purchase when you use your qualifying coupon code during checkout. Because amazing fragrance deserves rewarding moments.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Fragrance for Him – A Scent for Every Story</span></h3>\n<p dir=\"ltr\"><span>Choosing fragrance is a personal preference. Our selection offers adaptable scent profiles to suit your mood, lifestyle, or occasion, allowing you to pick from the most </span><span>popular men's perfumes</span><span>.</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Fresh &amp; Aquatic: </span><span>Fresh and airy, great for everyday wear or travel during the summer months.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Woody &amp; Earthy:</span><span> Strong and earthy, great for men who make bold statements without saying a word.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Oriental &amp; Spicy:</span><span> Sensual and strong, great for evening wear and colder weather.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Citrusy &amp; Zesty:</span><span> Vibrant and charged, great for a relaxed day look or post-gym freshness.</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>Complete his style with a fragrance for every occasion, ranging from bold to everyday.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Best Fragrances for Men – Carefully Chosen for Impact</span></h3>\n<p dir=\"ltr\"><span>Purchasing the </span><span>best fragrances for men</span><span> among numerous collections is not simple. AG Perfumes &amp; Cosmetics displays relevant recommendations, transparent products, and customer-oriented services to make perfume selection easier. Enhance your perfume collection with lasting perfumes that are fashionable, powerful, and discreet.</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Long Wear Time:</span><span> Our perfumes are chosen for their exceptional sillage and endurance. Remain fresh from morning meetings to evening affairs.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Unmistakable Identity:</span><span> Create every arrival unforgettable with a fragrance that leaves a strong, masculine mark.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Seasonal Rotation:</span><span> Refresh your fragrance wardrobe all year around with perfumes designed for every season, from summer to spring.</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>We provide the finest perfume for men that suits each stage in your life.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Buy Fragrance for Him – The AG Cosmetics Difference</span></h3>\n<p dir=\"ltr\"><span>When you </span><span>buy fragrance for him</span><span> from AG Perfumes &amp; Cosmetics, you are investing in confidence. Here are the reasons why customers prefer us:</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Curated Luxury:</span><span> We have top-quality fragrances at all price levels.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>No Middlemen:</span><span> We, as a Canadian cosmetics distributor, provide wholesale and retail prices.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Regular Offers &amp; Perks:</span><span> Be prepared to get limited-time offers and seasonal discounts on perfumes.</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>If birthday, anniversary, or personal upgrade shopping is on your agenda, our site simplifies gift-giving with a powerful impact.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Luxury Men's Fragrance – Upgrade Your Ritual</span></h3>\n<p dir=\"ltr\"><span>An ideal </span><span>luxury men's fragrance</span><span> is an extension to your grooming ritual. It is your daily ritual that determines the tone for how you present yourself in the world. At AG Perfumes &amp; Cosmetics, we celebrate fragrance as a platform for self-care, self-expression, and empowerment.</span><b></b></p>\n<p dir=\"ltr\"><span>Whether you like your scent subtle or bold, we provide classy fragrances selected especially for you.</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Office-Ready Subtlety</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Date-Night Allure</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Weekend Casual</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Black-Tie Elegance</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>Make your mark in your group by using the correct fragrance.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Gifting Made Easy</span></h3>\n<p dir=\"ltr\"><span>Shopping for someone special? A </span><span>popular men's perfume</span><span> is an ageless gift. A sophisticated, masculine scent is always an excellent option for gifts such as Father's Day, birthdays, or graduations. We offer accurate product descriptions, top notes, and customer reviews to assist you in your decision.</span></p>\n<p dir=\"ltr\"><span>From stylish packaging to strong scents, each bottle is a style and sentiment statement.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Frequently Asked Questions (FAQs)</span></h3>\n<p dir=\"ltr\"><strong>1. What is the best perfume for men right now?</strong></p>\n<p dir=\"ltr\"><span>It's a matter of personal preference – woody, spicy, and fresh fragrances are currently extremely trendy among men.</span><b></b></p>\n<p dir=\"ltr\"><strong>2. Do perfumes for men last throughout the day?</strong></p>\n<p dir=\"ltr\"><span>Most of our premium varieties have 8-12 hours of longevity, perfect for day-to-night coverage.</span><b></b></p>\n<p dir=\"ltr\"><strong>3. How should I store my fragrance?</strong></p>\n<p dir=\"ltr\"><span>Keep it in a dry, cool area, out of direct sunlight, to help preserve the quality and longevity of the scent.</span><b></b></p>\n<p dir=\"ltr\"><strong>4. Can I wear the same scent throughout the year?</strong></p>\n<p dir=\"ltr\"><span>Yes, but most find lighter notes in summer and richer notes in winter for optimum harmony.</span><b></b></p>\n<p dir=\"ltr\"><strong>5. Are your perfumes authentic?</strong></p>\n<p dir=\"ltr\"><span>Yes. All our perfumes are 100% genuine and procured from trustworthy, authorized suppliers.</span><b></b></p>\n<p dir=\"ltr\"><strong>6. How can I find the right scent for me?</strong></p>\n<p dir=\"ltr\"><span>Start by learning about fragrance families, like woody, citrus, and oriental, and reading our in-depth product notes and comments.</span><b></b></p>\n<p dir=\"ltr\"><strong>7. Is there a return policy for men’s fragrance?</strong></p>\n<p dir=\"ltr\"><span>We offer return policies on unopened, sealed items within a certain time frame. Visit our return policy page.</span><b></b></p>\n<p dir=\"ltr\"><strong>8. Can I get samples before purchasing?</strong></p>\n<p dir=\"ltr\"><span>The availability of samples depends on the product. Look for promotions or sampler packs on our website.</span><b></b></p>\n<p dir=\"ltr\"><strong>9. Are men's fragrances different from unisex options?</strong></p>\n<p dir=\"ltr\"><span>Yes, men's fragrances usually contain stronger, muskier, woodier, or spicier notes than lighter unisex fragrances.</span><b></b></p>\n<p dir=\"ltr\"><strong>10. How can I extend the life of my fragrance?</strong></p>\n<p dir=\"ltr\"><span>Apply to pulse areas, like the wrists and neck, and first moisturize your skin to make the scent last longer.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><span>Best-Selling Men’s Fragrances</span></h3>\n<p dir=\"ltr\"><span>At AG Perfumes &amp; Cosmetics, we invite you to rethink your fragrance shopping experience. We aim to give every man an incredible scent that smells phenomenal and makes him feel powerful. Looking for a fragrance that embodies sophistication and success, or just compliments? We have the ideal fragrance for him.</span></p>\n<p dir=\"ltr\">Explore our extensive collection of the best fragrances for men, shop confidently, and transform your life with our best-selling perfume ranges.<br></p>\n</div>",
+      "parentSlug": "fragrance-popular",
+      "productCount": 197,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303527460931,
+      "slug": "milani",
+      "title": "Milani",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302383890499,
+      "slug": "mists-essences",
+      "title": "Mists & Essences",
+      "description": "",
+      "parentSlug": "moisturizers",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302383693891,
+      "slug": "moisturizers",
+      "title": "Moisturizers",
+      "description": "",
+      "parentSlug": "skincare",
+      "productCount": 8,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905510467,
+      "slug": "mont-blanc",
+      "title": "Mont Blanc",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 12,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303527755843,
+      "slug": "moonrin-cosmetics",
+      "title": "Moonrin Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301861208131,
+      "slug": "nail-accessories",
+      "title": "Nail Accessories",
+      "description": "",
+      "parentSlug": "nails",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859340355,
+      "slug": "nail-polish",
+      "title": "Nail Polish",
+      "description": "",
+      "parentSlug": "nails",
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861175363,
+      "slug": "nails",
+      "title": "Nails",
+      "description": "",
+      "parentSlug": "cosmetics",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905543235,
+      "slug": "nars",
+      "title": "NARS",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 7,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303527985219,
+      "slug": "nautica",
+      "title": "Nautica",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528575043,
+      "slug": "neutrogena",
+      "title": "Neutrogena",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302927544387,
+      "slug": "new-cosmetics",
+      "title": "New Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 28,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303069823043,
+      "slug": "new-fragrance",
+      "title": "New Fragrance",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 212,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301858848835,
+      "slug": "new-in",
+      "title": "New In",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 35,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302927249475,
+      "slug": "new-skincare",
+      "title": "New Skincare",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 10,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302383792195,
+      "slug": "night-creams",
+      "title": "Night Creams",
+      "description": "",
+      "parentSlug": "moisturizers",
+      "productCount": 5,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303218720835,
+      "slug": "nivea",
+      "title": "Nivea",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303504621635,
+      "slug": "nyx",
+      "title": "NYX",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 20,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302954184771,
+      "slug": "nyx-cosmetics",
+      "title": "NYX Cosmetics",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 20,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301828735043,
+      "slug": "offers",
+      "title": "Offers",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 14,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859405891,
+      "slug": "oud",
+      "title": "Oud",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 27,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301901643843,
+      "slug": "paco-rabanne",
+      "title": "Paco Rabanne",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 9,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859438659,
+      "slug": "palette",
+      "title": "Palette",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 5,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301828309059,
+      "slug": "parfum",
+      "title": "Parfum",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 10,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302237777987,
+      "slug": "parfum-extrait",
+      "title": "Parfum / Extrait",
+      "description": "",
+      "parentSlug": "fragrance-type",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859504195,
+      "slug": "perfume-oils",
+      "title": "Perfume oils",
+      "description": "",
+      "parentSlug": "fragrance-type",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301827719235,
+      "slug": "popular",
+      "title": "Popular",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 11,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303527657539,
+      "slug": "prada",
+      "title": "Prada",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860225091,
+      "slug": "primer-corrector",
+      "title": "Primer / Corrector",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528116291,
+      "slug": "ralph-lauren",
+      "title": "Ralph lauren",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303527034947,
+      "slug": "rasasi",
+      "title": "Rasasi",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 5,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303527690307,
+      "slug": "revlon",
+      "title": "Revlon",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528411203,
+      "slug": "rihanna",
+      "title": "Rihanna",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303527264323,
+      "slug": "salvatore-ferragamo",
+      "title": "Salvatore Ferragamo",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302253211715,
+      "slug": "scented-body-lotions",
+      "title": "Scented Body Lotions",
+      "description": "",
+      "parentSlug": "fragrance-body-hygiene",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303528345667,
+      "slug": "schmidts",
+      "title": "Schmidts",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302906900547,
+      "slug": "sephora",
+      "title": "Sephora",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301861077059,
+      "slug": "sets-palettes",
+      "title": "Sets & Palettes",
+      "description": "",
+      "parentSlug": "cosmetics",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860356163,
+      "slug": "setting-spray-powder",
+      "title": "Setting Spray & Powder",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301859307587,
+      "slug": "shampoo",
+      "title": "Shampoo",
+      "description": "",
+      "parentSlug": "hair-care",
+      "productCount": 23,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303526379587,
+      "slug": "sheamoisture",
+      "title": "SheaMoisture",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301861371971,
+      "slug": "sheet-masks",
+      "title": "Sheet Masks",
+      "description": "",
+      "parentSlug": "masks",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302384316483,
+      "slug": "skincare",
+      "title": "Skincare",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 37,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": null,
+      "slug": "skincare-body-care",
+      "title": "Body Care",
+      "description": "",
+      "parentSlug": "skincare",
+      "productCount": 8,
+      "productCountNote": "Sum of child category counts, not a deduplicated total - products in multiple overlapping child categories are counted once per child.",
+      "isVirtual": true,
+      "isOrphan": false
+    },
+    {
+      "id": 303526084675,
+      "slug": "sooae",
+      "title": "Sooae",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301860978755,
+      "slug": "sponges-applicators",
+      "title": "Sponges & Applicators",
+      "description": "",
+      "parentSlug": "tools-accessories",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861437507,
+      "slug": "sunscreen",
+      "title": "Sunscreen",
+      "description": "",
+      "parentSlug": "skincare",
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303528050755,
+      "slug": "swiss-army",
+      "title": "Swiss Army",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301905608771,
+      "slug": "tarte",
+      "title": "Tarte",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 4,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860651075,
+      "slug": "tinted-moisturizer",
+      "title": "Tinted Moisturizer",
+      "description": "",
+      "parentSlug": "face",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905641539,
+      "slug": "tom-ford",
+      "title": "Tom Ford",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905674307,
+      "slug": "too-faced",
+      "title": "Too Faced",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301860945987,
+      "slug": "tools-accessories",
+      "title": "Tools & Accessories",
+      "description": "",
+      "parentSlug": "cosmetics",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302383726659,
+      "slug": "treatments",
+      "title": "Treatments",
+      "description": "",
+      "parentSlug": "skincare",
+      "productCount": 6,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302928527427,
+      "slug": "unboxed-testers",
+      "title": "Unboxed/Testers",
+      "description": "",
+      "parentSlug": "fragrance-popular",
+      "productCount": 9,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301858816067,
+      "slug": "uncategorized",
+      "title": "Uncategorized",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 9,
+      "isVirtual": false,
+      "isOrphan": true,
+      "isFallback": true
+    },
+    {
+      "id": 301858881603,
+      "slug": "unisex",
+      "title": "Unisex",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 18,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 303528181827,
+      "slug": "uomo",
+      "title": "Uomo",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301905739843,
+      "slug": "urban-decay",
+      "title": "Urban Decay",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 7,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302906179651,
+      "slug": "urban-decay-1",
+      "title": "Urban Decay",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 7,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301905707075,
+      "slug": "valentino",
+      "title": "Valentino",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 2,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301861568579,
+      "slug": "values-gift-sets",
+      "title": "Values & Gift Sets",
+      "description": "",
+      "parentSlug": "sets-palettes",
+      "productCount": 0,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905772611,
+      "slug": "versace",
+      "title": "Versace",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 39,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302253375555,
+      "slug": "warm-spicy",
+      "title": "Warm & Spicy",
+      "description": "",
+      "parentSlug": "fragrance-scent-family",
+      "productCount": 3,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 303527788611,
+      "slug": "wet-n-wild",
+      "title": "Wet N Wild",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301830012995,
+      "slug": "womens-deodorants-body-sprays",
+      "title": "Women's Deodorants/Body Sprays",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 1,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301828341827,
+      "slug": "womens-giftset",
+      "title": "Women’s Giftset",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 18,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 301827522627,
+      "slug": "womens-perfume",
+      "title": "Women’s Perfume",
+      "description": "<h3 dir=\"ltr\"><strong>Elevate Your Essence: Find the Best Perfume for Women</strong></h3>\n<p dir=\"ltr\"><span>Perfume is a representation of character. If you're looking for an everyday signature or an evening out perfume, AG Perfumes &amp; Cosmetics presents the perfect perfume for women with unparalleled sophistication and long-lasting impression.</span><b></b></p>\n<p dir=\"ltr\"><span>From floral and fruity to woody and oriental, our carefully selected range of perfumes has everything that can lift your mood, personality, and confidence. When it comes to </span><span>fragrance for her</span><span>, AG Perfumes &amp; Cosmetics has a feeling.</span></p>\n<p dir=\"ltr\"> </p>\n<h3 dir=\"ltr\"><strong>Why are AG Perfumes &amp; Cosmetics the Top Choice for Women in Canada?</strong></h3>\n<p dir=\"ltr\"><span>As far as </span><span>women's perfume online shopping</span><span> is concerned, we realize how important trust, authenticity, and the quality of products are. AG Perfumes &amp; Cosmetics is a trusted Canadian distributor and retailer providing an elite line of </span><span>luxury women's fragrances</span><span> and cosmetics.</span><b></b></p>\n<p dir=\"ltr\"><span>We carefully tailor each of our products to suit the unique tastes and personalities of Canadian women. From delicate daywears to dramatic nightwears, our collection holds the </span><span>top women’s fragrance</span><span>, carefully selected for quality and durability.</span></p>\n<h3 dir=\"ltr\"><span>Fragrance for Her – Designed for Every Occasion</span></h3>\n<p dir=\"ltr\"><span>A woman's scent journey changes with each stage of her life. Whether shopping for yourself or someone special, our variety of the </span><span>best fragrance perfumes for women</span><span> suits any occasion.</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Office-Ready Confidence:</span><span> Fresh citrus or aquatic fragrances that revitalize your mornings.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Evening Allure:</span><span> Rich amber, musk, and floral scents to leave your mark.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Weekend Vibes:</span><span> Fruity, fresh perfumes ideal for brunch, errands, or a low-key night out.</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>Fragrance isn't one-size-fits-all; it's personal. That's why our team continuously refreshes our offerings, ensuring you'll always find the latest and most </span><span>popular women's fragrances</span><span> in stock.</span></p>\n<h3 dir=\"ltr\"><span>Why Should You Choose to Buy From AG Perfumes &amp; Cosmetics?</span></h3>\n<h4 dir=\"ltr\"><span>Authentic Products Only</span></h4>\n<p dir=\"ltr\"><span>We are a Canadian-based fragrance and cosmetics distributor with deep industry roots. All products are 100% authentic, sourced directly from reputable manufacturers.</span></p>\n<h4 dir=\"ltr\"><span>Curated Collection for Canadian Women</span></h4>\n<p dir=\"ltr\"><span>Our choices are both a response to world trends as well as specifically to Canadian consumer tastes. Whatever your desire to search for your best fragrance or complement an ageless collection, our selection of </span><span>top fragrances for women</span><span> meets every preference.</span></p>\n<h4 dir=\"ltr\"><span>Easy Online Shopping</span></h4>\n<p dir=\"ltr\"><span>Our </span><span>women's perfume online shopping</span><span> experience is designed for speed and convenience. Shop comfortably, check out safely, and have your purchases shipped quickly to your door.</span></p>\n<h3 dir=\"ltr\"><span>Explore the Best Body Perfume for Women</span></h3>\n<p dir=\"ltr\"><span>Your fragrance should follow you around. Our </span><span>best body perfume for women</span><span> is made to stay longer on your skin, providing all-day freshness without having to reapply it. Whether it's a light mist or a full elixir, our choice is wear-tested and skin-friendly. From day-to-night use to special events, explore our \"</span><span>best fragrance perfume for women</span><span>\" section that suits every mood, moment and memory.</span><b></b></p>\n<p dir=\"ltr\"><span>Seeking something soft and feminine? Or a spicy, bold signature fragrance? AG Perfumes &amp; Cosmetics has a broad range of fragrances that are skin-friendly, climate-friendly, and designed to layer with your favourite makeup.</span></p>\n<h3 dir=\"ltr\"><span>Gifting Made Easy – Fragrance for Her</span></h3>\n<p dir=\"ltr\"><span>Looking for the ideal birthday gift, anniversary gift? A high-end bottle of perfume makes an ideal gift product. Our gift-worthy collection includes </span><span>luxury women's fragrances</span><span> that make a lasting impression, both in fragrance and packaging.</span></p>\n<p dir=\"ltr\"><span>And we make gifting easy too:</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Transparent scent descriptions for quick browsing</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Quick shipping to Canada</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Secure checkout process</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>No guesswork. Just fragrances she'll adore.</span></p>\n</li>\n</ul>\n<h3 dir=\"ltr\"><span>Most Popular Fragrance Families – What's Yours?</span></h3>\n<p dir=\"ltr\"><span>Don't know where to begin? Try some of the most popular fragrance families:</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Floral:</span><span> Charming and sophisticated, which has a scent of rose, peony, and jasmine.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Fruity:</span><span> Flirty and fresh, with a hint of berries, citrus, and apple.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Woody:</span><span> Natural and earthy, that has a fragrance of sandalwood, cedar, and vetiver bases.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Oriental:</span><span> Sensual and exotic, perfumed with amber, vanilla, and spice-laden richness.</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Fresh:</span><span> Fresh and airy, best for everyday wear and summer.</span></p>\n</li>\n</ul>\n<p><b><br></b></p>\n<p dir=\"ltr\"><span>Discover your fragrance mood and have us bring it right to your doorstep.</span></p>\n<h3 dir=\"ltr\"><span>Why AG Perfumes &amp; Cosmetics is Your Preferred Choice for Women's Perfume?</span></h3>\n<p dir=\"ltr\"><span>AG Perfumes &amp; Cosmetics is a community-founded, customer-centric, and Canadian business. Our goal is to provide:</span></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Excellent quality at authentic prices</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Easy, safe online transactions</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>Friendly customer service</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span>A shopping experience that respects your time and trust</span></p>\n</li>\n</ul>\n<p dir=\"ltr\"><span>Whether you're discovering new trends or rebuying your signature perfume, our site is built to make women's perfume online shopping seamless.</span></p>\n<h3 dir=\"ltr\"><span>Join Thousands of Happy Customers</span></h3>\n<p dir=\"ltr\"><span>Our online fragrance store is the perfect destination for women to discover their ideal scent. Our repeat shoppers adore us because of our quick shipping, guaranteed availability, and tastefully selected collections that always seem fresh and compelling. Don't believe us. Visit our store and see why AG Perfumes &amp; Cosmetics is the ideal place to purchase </span><span>fragrance for her</span><span> online.</span></p>\n<h3 dir=\"ltr\"><span>Frequently Asked Questions (FAQs)</span></h3>\n<p dir=\"ltr\"><strong>1. What is the top-selling perfume for women online?</strong></p>\n<p dir=\"ltr\"><span>We have a carefully picked range of high-quality, top-selling fragrances specifically designed to suit today's woman.</span><b></b></p>\n<p dir=\"ltr\"><strong>2. How do I select a fragrance that suits me best?</strong></p>\n<p dir=\"ltr\"><span>Browse by scent type (floral, fruity, or woody) and read the scent notes to discover a fragrance that reflects your personality and lifestyle.</span><b></b></p>\n<p dir=\"ltr\"><strong>3. Are the perfumes authentic?</strong></p>\n<p dir=\"ltr\"><span>Yes. We only stock genuine, brand-verified perfumes obtained from reliable suppliers.</span><b></b></p>\n<p dir=\"ltr\"><strong>4. Can I return a fragrance if I don’t like it?</strong></p>\n<p dir=\"ltr\"><span>We accept returns on unopened products according to our return policy. Please view our returns page for complete details.</span><b></b></p>\n<p dir=\"ltr\"><strong>5. Is your website secure for shopping?</strong></p>\n<p dir=\"ltr\"><span>Yes. AG Perfumes &amp; Cosmetics uses secure checkout and encryption to safeguard your data and payments.</span><b></b></p>\n<p dir=\"ltr\"><strong>6. How long does shipping take?</strong></p>\n<p dir=\"ltr\"><span>We provide quick shipping within Canada. Shipping usually takes 2-7 business days, depending on destination.</span><b></b></p>\n<p dir=\"ltr\"><strong>7. Are there travel-size options?</strong></p>\n<p dir=\"ltr\"><span>Yes. Most perfumes come in several sizes, including small bottles suitable for everyday use.</span><b></b></p>\n<p dir=\"ltr\"><strong>8. Do you have new perfume releases?</strong></p>\n<p dir=\"ltr\"><span>Yes. We update our catalogue regularly with the new and best-selling fragrances for women.</span><b></b></p>\n<p dir=\"ltr\"><strong>9. Can I track my order?</strong></p>\n<p dir=\"ltr\"><span>Yes. Once your order is processed, you'll receive tracking information via email for full order transparency.</span></p>\n<p> </p>",
+      "parentSlug": "fragrance-popular",
+      "productCount": 121,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 301905838147,
+      "slug": "ysl",
+      "title": "YSL",
+      "description": "",
+      "parentSlug": "brands",
+      "productCount": 17,
+      "isVirtual": false,
+      "isOrphan": false
+    },
+    {
+      "id": 302492450883,
+      "slug": "ysl-1",
+      "title": "YSL",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 17,
+      "isVirtual": false,
+      "isOrphan": true
+    },
+    {
+      "id": 302540816451,
+      "slug": "ysl-2",
+      "title": "YSL",
+      "description": "",
+      "parentSlug": null,
+      "productCount": 17,
+      "isVirtual": false,
+      "isOrphan": true
+    }
+  ]
+}

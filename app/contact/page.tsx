@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact-form";
 import { MapEmbed } from "@/components/map-embed";
-import { Button } from "@/components/button";
-import { MonogramWatermark } from "@/components/monogram";
 import { Accordion } from "@/components/accordion";
 import { SectionHeading } from "@/components/section-heading";
 import { BUSINESS, SITE_URL } from "@/lib/site";
@@ -17,7 +15,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="pb-12 pt-32 md:pt-40">
+      <section className="pb-12 pt-40 md:pt-48">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
           <h1 className="font-display text-h1 font-medium text-ink">Come Say Hello</h1>
           <p className="mt-6 font-body text-body text-ink/70">
@@ -76,16 +74,6 @@ export default function ContactPage() {
         <div className="mx-auto max-w-[700px] px-6 lg:px-10">
           <SectionHeading title="Common Questions" className="mb-12" />
           <Accordion items={FAQ_ITEMS} idPrefix="contact-faq" />
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden bg-black py-20 text-center text-cream">
-        <MonogramWatermark className="absolute left-1/2 top-1/2 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 opacity-[0.08]" />
-        <div className="relative mx-auto max-w-xl px-6">
-          <h2 className="font-display text-h3 font-medium">Ready to visit?</h2>
-          <Button href={BUSINESS.mapsUrl} external className="mt-6 inline-block">
-            Get Directions →
-          </Button>
         </div>
       </section>
     </>

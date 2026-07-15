@@ -8,21 +8,22 @@ const DEFAULT_MESSAGES = [
 interface OffersMarqueeProps {
   messages?: string[];
   goldText?: boolean;
+  compact?: boolean;
   className?: string;
 }
 
-export function OffersMarquee({ messages = DEFAULT_MESSAGES, goldText = false, className = "" }: OffersMarqueeProps) {
+export function OffersMarquee({ messages = DEFAULT_MESSAGES, goldText = false, compact = false, className = "" }: OffersMarqueeProps) {
   const track = [...messages, ...messages];
 
   return (
-    <div className={`group overflow-hidden bg-rose py-3 ${className}`}>
+    <div className={`group overflow-hidden bg-rose ${compact ? "py-1.5" : "py-3"} ${className}`}>
       <div className="flex w-max animate-marquee gap-8 group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused] motion-reduce:animate-none">
         {track.map((msg, i) => (
           <span
             key={i}
-            className={`flex shrink-0 items-center gap-8 font-body text-sm font-medium uppercase tracking-label ${
-              goldText ? "gold-text" : "text-cream"
-            }`}
+            className={`flex shrink-0 items-center gap-8 font-body font-medium uppercase tracking-label ${
+              compact ? "text-[0.7rem]" : "text-sm"
+            } ${goldText ? "gold-text" : "text-cream"}`}
           >
             {msg}
             <span className={goldText ? "gold-text" : "text-gold-end"}>✦</span>

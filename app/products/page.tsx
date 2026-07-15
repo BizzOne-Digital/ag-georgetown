@@ -1,163 +1,47 @@
 import type { Metadata } from "next";
-import { CategoryTabs } from "@/components/category-tabs";
-import { ProductTile } from "@/components/product-tile";
-import { SectionHeading } from "@/components/section-heading";
-import { Button } from "@/components/button";
-import { MonogramWatermark } from "@/components/monogram";
-import { OffersMarquee } from "@/components/offers-marquee";
-import { FrequentlyPaired } from "@/components/frequently-paired";
-import { GiftSetArt, PerfumeBottleArt, SkincareJarArt, BrushArt } from "@/components/placeholder-art";
+import { getCatalogData } from "@/lib/repositories/product.repository";
+import { getCategoryBySlug } from "@/lib/repositories/category.repository";
+import { CatalogGrid } from "@/components/catalog/catalog-grid";
+import { parseCatalogFilters, type SearchParamValue } from "@/lib/catalog/search-params";
 import { SITE_URL } from "@/lib/site";
-import {
-  FRAGRANCES_FOR_HER,
-  FRAGRANCES_FOR_HIM,
-  MAKEUP_FACE,
-  MAKEUP_EYES,
-  MAKEUP_LIPS,
-  MAKEUP_NAILS,
-  SKINCARE_HYDRATION,
-  SKINCARE_ANTI_AGING,
-  SKINCARE_ACNE,
-  SKINCARE_BRIGHTENING,
-  ACCESSORIES,
-  type ProductItem,
-} from "@/lib/products";
 
 export const metadata: Metadata = {
-  title: "Shop Fragrances, Makeup & Skincare | AG Liquidation Georgetown",
-  description:
-    "Browse our full collection of authentic perfumes, cosmetics, and self-care essentials - in-store in Georgetown.",
+  title: "Shop All Products | AG Liquidation Georgetown",
+  description: "Browse our full catalog of authentic fragrances, cosmetics, and skincare.",
   alternates: { canonical: `${SITE_URL}/products` },
 };
 
-const NEW_ARRIVALS_MESSAGES = [
-  "NEW ARRIVALS WEEKLY",
-  "FRESH STOCK EVERY FRIDAY",
-  "FOLLOW @agcosmeticsgeorgetown FOR DROPS",
-];
-
-const FRAGRANCE_PAIRINGS = [
-  { Art: GiftSetArt, name: "Travel Spray Case", note: "Keep your signature scent on hand" },
-  { Art: PerfumeBottleArt, name: "Matching Body Mist", note: "Layer your fragrance to make it last" },
-];
-
-const MAKEUP_PAIRINGS = [
-  { Art: BrushArt, name: "Setting Spray", note: "Lock your look in for the day" },
-  { Art: BrushArt, name: "Brush Cleaner", note: "Keep brushes fresh between uses" },
-];
-
-const SKINCARE_PAIRINGS = [
-  { Art: BrushArt, name: "Facial Cleansing Brush", note: "Deepens your cleansing routine" },
-  { Art: SkincareJarArt, name: "Travel-Size Moisturizer", note: "Perfect for on-the-go touch-ups" },
-];
-
-function TileGrid({ items, dark = false, cols = 4 }: { items: ProductItem[]; dark?: boolean; cols?: 2 | 4 }) {
-  return (
-    <div
-      className={`grid grid-cols-2 gap-4 ${cols === 2 ? "md:grid-cols-2" : "md:grid-cols-4"} md:gap-6 [&>*:nth-child(even)]:md:translate-y-6`}
-    >
-      {items.map((item) => (
-        <ProductTile key={`${item.brand}-${item.name}`} {...item} dark={dark} />
-      ))}
-    </div>
-  );
+interface ProductsPageProps {
+  searchParams: Record<string, SearchParamValue>;
 }
 
-function SubGroup({ label, items, dark = false, cols = 4 }: { label: string; items: ProductItem[]; dark?: boolean; cols?: 2 | 4 }) {
+export default async function ProductsPage({ searchParams }: ProductsPageProps) {
+  const filters = parseCatalogFilters(searchParams);
+
+  const [{ products, total, facets }, category] = await Promise.all([
+    getCatalogData(filters),
+    filters.categorySlug ? getCategoryBySlug(filters.categorySlug) : Promise.resolve(null),
+  ]);
+
   return (
-    <div>
-      <span className="inline-block bg-black px-4 py-1.5 font-body text-caption font-medium uppercase tracking-label text-gold-end">
-        {label}
-      </span>
-      <div className="mt-6">
-        <TileGrid items={items} dark={dark} cols={cols} />
+    <div className="mx-auto max-w-7xl px-6 py-10 lg:px-10">
+      <h1 className="font-display text-h2 font-medium text-ink">{category ? category.title : "Shop All"}</h1>
+
+      <div className="mt-8">
+        <CatalogGrid
+          facets={facets}
+          currentFilters={{
+            types: filters.types ?? [],
+            availability: filters.availability ?? [],
+            brands: filters.brands ?? [],
+            minPrice: filters.minPrice,
+            maxPrice: filters.maxPrice,
+          }}
+          sort={filters.sort ?? "featured"}
+          products={products}
+          total={total}
+        />
       </div>
     </div>
-  );
-}
-
-export default function ProductsPage() {
-  return (
-    <>
-      <OffersMarquee messages={NEW_ARRIVALS_MESSAGES} goldText className="mt-20" />
-
-      <section className="relative overflow-hidden bg-gradient-to-br from-gold-start/15 to-gold-end/25 pb-16 pt-16 md:pt-16">
-        <MonogramWatermark className="absolute -right-16 -top-16 h-80 w-80" />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 text-center lg:px-10">
-          <div className="flex h-40 w-40 items-center justify-center clip-facet bg-cream/60">
-            <GiftSetArt className="h-28 w-28" />
-          </div>
-          <h1 className="font-display text-h1 font-medium text-ink">Explore Our Collection</h1>
-          <p className="max-w-xl font-body text-body text-ink/70">
-            Authentic fragrances, cosmetics, and self-care - all in one place in Georgetown.
-          </p>
-        </div>
-      </section>
-
-      <CategoryTabs />
-
-      {/* Fragrances */}
-      <section id="fragrances" className="scroll-mt-36 py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <SectionHeading eyebrow="Fragrances" title="For Her & For Him" align="left" className="mb-12" />
-          <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
-            <SubGroup label="For Her" items={FRAGRANCES_FOR_HER} />
-            <SubGroup label="For Him" items={FRAGRANCES_FOR_HIM} />
-          </div>
-          <FrequentlyPaired items={FRAGRANCE_PAIRINGS} />
-        </div>
-      </section>
-
-      {/* Makeup */}
-      <section id="makeup" className="scroll-mt-36 bg-black py-20 text-cream">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <SectionHeading eyebrow="Makeup" title="Face, Eyes, Lips & Nails" align="left" className="mb-12 [&_h2]:text-cream" />
-          <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
-            <SubGroup label="Face" items={MAKEUP_FACE} dark cols={2} />
-            <SubGroup label="Eyes" items={MAKEUP_EYES} dark cols={2} />
-            <SubGroup label="Lips" items={MAKEUP_LIPS} dark cols={2} />
-            <SubGroup label="Nails" items={MAKEUP_NAILS} dark cols={2} />
-          </div>
-          <FrequentlyPaired items={MAKEUP_PAIRINGS} dark />
-        </div>
-      </section>
-
-      {/* Skincare */}
-      <section id="skincare" className="scroll-mt-36 py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <SectionHeading eyebrow="Skincare" title="Shop by Concern" align="left" className="mb-12" />
-          <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
-            <SubGroup label="Hydration" items={SKINCARE_HYDRATION} cols={2} />
-            <SubGroup label="Anti-Aging" items={SKINCARE_ANTI_AGING} cols={2} />
-            <SubGroup label="Acne-Prone" items={SKINCARE_ACNE} cols={2} />
-            <SubGroup label="Brightening" items={SKINCARE_BRIGHTENING} cols={2} />
-          </div>
-          <FrequentlyPaired items={SKINCARE_PAIRINGS} />
-        </div>
-      </section>
-
-      {/* Accessories & Self-Care */}
-      <section id="accessories" className="scroll-mt-36 bg-black py-20 text-cream">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <SectionHeading eyebrow="Accessories" title="Accessories & Self-Care" align="left" className="mb-12 [&_h2]:text-cream" />
-          <TileGrid items={ACCESSORIES} dark />
-        </div>
-      </section>
-
-      {/* Bottom CTA band */}
-      <section className="bg-rose py-16 text-center">
-        <div className="mx-auto max-w-2xl px-6">
-          <h2 className="font-display text-h3 font-medium text-cream">
-            Can&apos;t find what you&apos;re looking for?
-          </h2>
-          <p className="mt-3 font-body text-sm text-cream/85">
-            Come see our full in-store selection.
-          </p>
-          <Button href="/contact" variant="ghost" invert className="mt-6">
-            Get Directions
-          </Button>
-        </div>
-      </section>
-    </>
   );
 }

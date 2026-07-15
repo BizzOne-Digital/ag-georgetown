@@ -16,7 +16,7 @@ export function ValueRow({ Art, image, title, body, reverse }: ValueRowProps) {
         reverse ? "md:[&>*:first-child]:order-2" : ""
       }`}
     >
-      <div className="relative flex h-56 items-center justify-center bg-gradient-to-br from-gold-start/15 to-gold-end/25 clip-facet md:h-72">
+      <div className="relative flex h-56 items-center justify-center overflow-hidden rounded-sm bg-gradient-to-br from-gold-start/15 to-gold-end/25 md:h-72">
         {image ? (
           <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 90vw, 45vw" className="object-cover" />
         ) : (

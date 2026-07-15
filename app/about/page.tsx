@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import { FacetedFrame } from "@/components/faceted-frame";
+import { BannerHero } from "@/components/banner-hero";
 import { StorefrontArt, PerfumeBottleArt, GiftSetArt, LipstickArt } from "@/components/placeholder-art";
 import { ValueRow } from "@/components/value-row";
 import { MilestonesTimeline } from "@/components/milestones-timeline";
@@ -25,23 +24,8 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pb-16 pt-32 md:pt-40">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-[45%_55%] md:items-center lg:px-10">
-          {/* TODO: replace with real storefront/interior photography from the client - using brand product photography as a stand-in for now */}
-          <FacetedFrame className="bg-gradient-to-br from-gold-start/15 to-gold-end/25">
-            <Image
-              src={AG_ABOUT_HERO.src}
-              alt={AG_ABOUT_HERO.alt}
-              fill
-              sizes="(max-width: 768px) 90vw, 45vw"
-              className="object-cover"
-            />
-          </FacetedFrame>
-          <h1 className="font-display text-h1 font-medium text-ink">
-            Real Brands. Real Savings. Real Georgetown.
-          </h1>
-        </div>
-      </section>
+      {/* TODO: replace with real storefront/interior photography from the client - using brand product photography as a stand-in for now */}
+      <BannerHero title="Real Brands. Real Savings. Real Georgetown." image={AG_ABOUT_HERO} />
 
       {/* Our story */}
       <section className="py-16">
@@ -102,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* In the Neighborhood */}
-      <section className="bg-gradient-to-br from-gold-start/10 to-gold-end/20 py-16 text-center">
+      <section className="bg-cream py-16 text-center">
         <div className="mx-auto max-w-2xl px-6">
           <h2 className="font-display text-h3 font-medium text-ink">In the Neighborhood</h2>
           <p className="mt-4 font-body text-body text-ink/75">

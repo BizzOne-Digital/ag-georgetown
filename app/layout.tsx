@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { fraunces, inter } from "@/lib/fonts";
+import { PromoBar } from "@/components/promo-bar";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageTransition } from "@/components/page-transition";
+import { CartHydrationBoundary } from "@/components/cart-hydration-boundary";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -77,6 +79,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="font-body text-ink">
+        <CartHydrationBoundary />
+        <PromoBar />
         <Navbar />
         <main>
           <PageTransition>{children}</PageTransition>

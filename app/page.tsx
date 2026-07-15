@@ -1,31 +1,20 @@
 import type { Metadata } from "next";
-import { HeroCarousel } from "@/components/hero-carousel";
+import { BannerHero } from "@/components/banner-hero";
 import { OffersMarquee } from "@/components/offers-marquee";
 import { CategoryTile } from "@/components/category-tile";
-import { WhyAGSection } from "@/components/why-ag-section";
-import { BundleCard } from "@/components/bundle-card";
-import { BestSellerCard } from "@/components/best-seller-card";
-import { ScrollSnapRow } from "@/components/scroll-snap-row";
+import { ProductRow } from "@/components/product-row";
+import { BrandStrip } from "@/components/brand-strip";
+import { TrustBadgeRow } from "@/components/trust-badge-row";
+import { NewsletterBand } from "@/components/newsletter-band";
 import { HowItWorks } from "@/components/how-it-works";
 import { Accordion } from "@/components/accordion";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
 import { InstagramTeaser } from "@/components/instagram-teaser";
 import { VisitUsSection } from "@/components/visit-us-section";
 import { SectionHeading } from "@/components/section-heading";
-import { Button } from "@/components/button";
-import { ScrollReveal, RevealItem } from "@/components/scroll-reveal";
-import { MonogramWatermark } from "@/components/monogram";
-import { ParallaxWatermark } from "@/components/parallax-watermark";
-import { PerfumeBottleArt, LipstickArt, SkincareJarArt, GiftSetArt } from "@/components/placeholder-art";
-import {
-  FRAGRANCE_CATEGORY_TILE,
-  MAKEUP_CATEGORY_TILE,
-  SKINCARE_CATEGORY_TILE,
-  FRAGRANCE_BUNDLE,
-  MAKEUP_BUNDLE,
-  SKINCARE_BUNDLE,
-} from "@/lib/images";
-import { BEST_SELLERS } from "@/lib/best-sellers";
+import { PerfumeBottleArt, LipstickArt, SkincareJarArt } from "@/components/placeholder-art";
+import { AG_HERO_1, FRAGRANCE_CATEGORY_TILE, MAKEUP_CATEGORY_TILE, SKINCARE_CATEGORY_TILE } from "@/lib/images";
+import { getBestSellingProducts, getBundleProducts, getTopVendors } from "@/lib/repositories/product.repository";
 import { FAQ_ITEMS } from "@/lib/faq";
 import { SITE_URL } from "@/lib/site";
 
@@ -45,34 +34,23 @@ export const metadata: Metadata = {
 
 const HOME_FAQ_ITEMS = FAQ_ITEMS.slice(0, 4);
 
-export default function HomePage() {
+export default async function HomePage() {
+  const [bestSellers, bundles, vendors] = await Promise.all([
+    getBestSellingProducts(12),
+    getBundleProducts(12),
+    getTopVendors(16),
+  ]);
+
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden pb-20 pt-32 md:pt-40">
-        <ParallaxWatermark className="absolute -left-24 top-10 h-[28rem] w-[28rem]">
-          <MonogramWatermark className="h-full w-full rotate-[-6deg]" />
-        </ParallaxWatermark>
-        <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-[55%_45%] md:items-center lg:px-10">
-          <div>
-            <p className="font-body text-caption font-medium uppercase tracking-label text-rose-deep">
-              Georgetown&apos;s Destination for Authentic Beauty
-            </p>
-            <h1 className="mt-4 font-display text-h1 font-medium text-ink">
-              Luxury Fragrance &amp; Cosmetics. Liquidation Prices.
-            </h1>
-            <p className="mt-6 max-w-xl font-body text-body text-ink/75">
-              Authentic, brand-name perfumes, makeup, and skincare for everyday use and special
-              occasions - at prices that make affordable luxury real.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/offers">Shop the Deals →</Button>
-              <Button href="/contact" variant="ghost">Get Directions</Button>
-            </div>
-          </div>
-          <HeroCarousel />
-        </div>
-      </section>
+      <BannerHero
+        eyebrow="Georgetown's Destination for Authentic Beauty"
+        title="Luxury Fragrance & Cosmetics. Liquidation Prices."
+        subtitle="Authentic, brand-name perfumes, makeup, and skincare for everyday use and special occasions - at prices that make affordable luxury real."
+        image={AG_HERO_1}
+        primaryCta={{ href: "/offers", label: "Shop the Deals" }}
+        secondaryCta={{ href: "/contact", label: "Get Directions" }}
+      />
 
       <OffersMarquee />
 
@@ -86,24 +64,21 @@ export default function HomePage() {
               image={FRAGRANCE_CATEGORY_TILE}
               name="Fragrance"
               description="Designer scents for him & her - Dior, Gucci, Versace and more"
-              href="/products#fragrances"
-              offset="up"
+              href="/products?category=fragrance"
             />
             <CategoryTile
               Art={LipstickArt}
               image={MAKEUP_CATEGORY_TILE}
               name="Makeup"
               description="Everyday essentials to full-glam, at prices that don't compromise"
-              href="/products#makeup"
-              offset="down"
+              href="/products?category=cosmetics"
             />
             <CategoryTile
               Art={SkincareJarArt}
               image={SKINCARE_CATEGORY_TILE}
               name="Skincare"
               description="Trusted formulas for every skin type and concern"
-              href="/products#skincare"
-              offset="up"
+              href="/products?category=skincare"
             />
           </div>
         </div>
@@ -115,57 +90,31 @@ export default function HomePage() {
           <SectionHeading eyebrow="Fan Favorites" title="What Georgetown Keeps Coming Back For" align="left" />
         </div>
         <div className="mx-auto mt-14 max-w-7xl px-6 lg:px-10">
-          <ScrollSnapRow>
-            {BEST_SELLERS.map((item) => (
-              <BestSellerCard key={`${item.brand}-${item.name}`} item={item} />
-            ))}
-          </ScrollSnapRow>
+          <ProductRow products={bestSellers} />
         </div>
       </section>
 
-      <WhyAGSection />
+      {/* Brand strip */}
+      <section className="border-y border-ink/10 py-14">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <SectionHeading eyebrow="Trusted Names" title="Brands We Carry" align="left" className="mb-8" />
+          <BrandStrip vendors={vendors.map((v) => v.vendor)} />
+        </div>
+      </section>
 
-      {/* Featured bundles */}
+      <TrustBadgeRow />
+
+      {/* Bundle Deals */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <SectionHeading eyebrow="Limited Time" title="This Week's Bundle Deals" />
-          <ScrollReveal className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-            <RevealItem className="md:mt-0">
-              <BundleCard
-                Art={GiftSetArt}
-                image={FRAGRANCE_BUNDLE}
-                name="Signature Scent Duo"
-                contents="1 Designer Perfume + 1 Travel Spray"
-                price="$39.99"
-                originalPrice="$79.99"
-                badge="Bundle"
-              />
-            </RevealItem>
-            <RevealItem className="md:mt-10">
-              <BundleCard
-                Art={LipstickArt}
-                image={MAKEUP_BUNDLE}
-                name="Glam Essentials Kit"
-                contents="Lipstick + Lip Liner + Mini Mirror"
-                price="$19.99"
-                originalPrice="$34.99"
-                badge="45% Off"
-              />
-            </RevealItem>
-            <RevealItem className="md:mt-0">
-              <BundleCard
-                Art={SkincareJarArt}
-                image={SKINCARE_BUNDLE}
-                name="Hydration Gift Set"
-                contents="Moisturizer + Serum + Gift Box"
-                price="$29.99"
-                originalPrice="$52.99"
-                badge="New"
-              />
-            </RevealItem>
-          </ScrollReveal>
+        </div>
+        <div className="mx-auto mt-14 max-w-7xl px-6 lg:px-10">
+          <ProductRow products={bundles} />
         </div>
       </section>
+
+      <NewsletterBand />
 
       {/* How It Works */}
       <section className="bg-cream py-24">

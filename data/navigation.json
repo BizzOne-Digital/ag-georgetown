@@ -1,0 +1,1025 @@
+{
+  "generatedAt": "2026-07-09T19:24:39.896Z",
+  "source": "data/scraped/navigation.json",
+  "totalItems": 8,
+  "items": [
+    {
+      "label": "About us",
+      "type": "page",
+      "slug": "about-us",
+      "href": "/pages/about-us",
+      "children": []
+    },
+    {
+      "label": "Brands",
+      "type": "group",
+      "slug": "brands",
+      "href": null,
+      "children": [
+        {
+          "label": "Afnan",
+          "type": "category",
+          "slug": "afnan",
+          "href": "/category/afnan",
+          "children": []
+        },
+        {
+          "label": "Armaf",
+          "type": "category",
+          "slug": "armaf",
+          "href": "/category/armaf",
+          "children": []
+        },
+        {
+          "label": "Aura",
+          "type": "category",
+          "slug": "aura",
+          "href": "/category/aura",
+          "children": []
+        },
+        {
+          "label": "Burberry",
+          "type": "category",
+          "slug": "burberry",
+          "href": "/category/burberry",
+          "children": []
+        },
+        {
+          "label": "Bvlgari",
+          "type": "category",
+          "slug": "bvlgari",
+          "href": "/category/bvlgari",
+          "children": []
+        },
+        {
+          "label": "Calvin Klein",
+          "type": "category",
+          "slug": "calvin-klein",
+          "href": "/category/calvin-klein",
+          "children": []
+        },
+        {
+          "label": "Carolina Herrera",
+          "type": "category",
+          "slug": "carolina-herrera",
+          "href": "/category/carolina-herrera",
+          "children": []
+        },
+        {
+          "label": "Coach",
+          "type": "category",
+          "slug": "coach",
+          "href": "/category/coach",
+          "children": []
+        },
+        {
+          "label": "Dolce & Gabbana",
+          "type": "category",
+          "slug": "dolce-gabbana",
+          "href": "/category/dolce-gabbana",
+          "children": []
+        },
+        {
+          "label": "Dior",
+          "type": "category",
+          "slug": "dior",
+          "href": "/category/dior",
+          "children": []
+        },
+        {
+          "label": "Essie",
+          "type": "category",
+          "slug": "essie",
+          "href": "/category/essie",
+          "children": []
+        },
+        {
+          "label": "Garnier",
+          "type": "category",
+          "slug": "garnier",
+          "href": "/category/garnier",
+          "children": []
+        },
+        {
+          "label": "Giorgio Armani",
+          "type": "category",
+          "slug": "giorgio-armani",
+          "href": "/category/giorgio-armani",
+          "children": []
+        },
+        {
+          "label": "Givenchy",
+          "type": "category",
+          "slug": "givenchy",
+          "href": "/category/givenchy",
+          "children": []
+        },
+        {
+          "label": "Gucci",
+          "type": "category",
+          "slug": "gucci",
+          "href": "/category/gucci",
+          "children": []
+        },
+        {
+          "label": "Guess",
+          "type": "category",
+          "slug": "guess",
+          "href": "/category/guess",
+          "children": []
+        },
+        {
+          "label": "Hugo Boss",
+          "type": "category",
+          "slug": "boss",
+          "href": "/category/boss",
+          "children": []
+        },
+        {
+          "label": "Jean Paul Gauthier",
+          "type": "category",
+          "slug": "jean-paul-gauthier",
+          "href": "/category/jean-paul-gauthier",
+          "children": []
+        },
+        {
+          "label": "Jimmy Choo",
+          "type": "category",
+          "slug": "jimmy-choo",
+          "href": "/category/jimmy-choo",
+          "children": []
+        },
+        {
+          "label": "Lattafa",
+          "type": "category",
+          "slug": "lattafa",
+          "href": "/category/lattafa",
+          "children": []
+        },
+        {
+          "label": "Mont Blanc",
+          "type": "category",
+          "slug": "mont-blanc",
+          "href": "/category/mont-blanc",
+          "children": []
+        },
+        {
+          "label": "MAC Cosmetics",
+          "type": "category",
+          "slug": "mac-cosmetics",
+          "href": "/category/mac-cosmetics",
+          "children": []
+        },
+        {
+          "label": "Nars",
+          "type": "category",
+          "slug": "nars",
+          "href": "/category/nars",
+          "children": []
+        },
+        {
+          "label": "Paco Rabanne",
+          "type": "category",
+          "slug": "paco-rabanne",
+          "href": "/category/paco-rabanne",
+          "children": []
+        },
+        {
+          "label": "Tarte",
+          "type": "category",
+          "slug": "tarte",
+          "href": "/category/tarte",
+          "children": []
+        },
+        {
+          "label": "Tom Ford",
+          "type": "category",
+          "slug": "tom-ford",
+          "href": "/category/tom-ford",
+          "children": []
+        },
+        {
+          "label": "Too Faced",
+          "type": "category",
+          "slug": "too-faced",
+          "href": "/category/too-faced",
+          "children": []
+        },
+        {
+          "label": "Urban Decay",
+          "type": "category",
+          "slug": "urban-decay",
+          "href": "/category/urban-decay",
+          "children": []
+        },
+        {
+          "label": "Versace",
+          "type": "category",
+          "slug": "versace",
+          "href": "/category/versace",
+          "children": []
+        },
+        {
+          "label": "Valentino",
+          "type": "category",
+          "slug": "valentino",
+          "href": "/category/valentino",
+          "children": []
+        },
+        {
+          "label": "YSL",
+          "type": "category",
+          "slug": "ysl",
+          "href": "/category/ysl",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "Fragrance",
+      "type": "category",
+      "slug": "fragrance",
+      "href": "/category/fragrance",
+      "children": [
+        {
+          "label": "Popular",
+          "type": "group",
+          "slug": "fragrance-popular",
+          "href": null,
+          "children": [
+            {
+              "label": "Bestseller",
+              "type": "category",
+              "slug": "bestseller-fragrance",
+              "href": "/category/bestseller-fragrance",
+              "children": []
+            },
+            {
+              "label": "Women’s Fragrance",
+              "type": "category",
+              "slug": "womens-perfume",
+              "href": "/category/womens-perfume",
+              "children": []
+            },
+            {
+              "label": "Men’s Fragrance",
+              "type": "category",
+              "slug": "mens-perfume",
+              "href": "/category/mens-perfume",
+              "children": []
+            },
+            {
+              "label": "Dubai & Arabian Scents",
+              "type": "category",
+              "slug": "dubai-arabian-scents",
+              "href": "/category/dubai-arabian-scents",
+              "children": []
+            },
+            {
+              "label": "Body & Hygiene",
+              "type": "category",
+              "slug": "body-hygiene",
+              "href": "/category/body-hygiene",
+              "children": []
+            },
+            {
+              "label": "Gift Sets & Bundles",
+              "type": "category",
+              "slug": "gift-sets",
+              "href": "/category/gift-sets",
+              "children": []
+            },
+            {
+              "label": "Unboxed/Testers",
+              "type": "category",
+              "slug": "unboxed-testers",
+              "href": "/category/unboxed-testers",
+              "children": []
+            },
+            {
+              "label": "Clearance",
+              "type": "category",
+              "slug": "clearance",
+              "href": "/category/clearance",
+              "children": []
+            },
+            {
+              "label": "New Arrivals",
+              "type": "category",
+              "slug": "new-fragrance",
+              "href": "/category/new-fragrance",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Type",
+          "type": "group",
+          "slug": "fragrance-type",
+          "href": null,
+          "children": [
+            {
+              "label": "Parfum / Extrait",
+              "type": "category",
+              "slug": "parfum-extrait",
+              "href": "/category/parfum-extrait",
+              "children": []
+            },
+            {
+              "label": "Eau de Parfum",
+              "type": "category",
+              "slug": "eau-de-parfum",
+              "href": "/category/eau-de-parfum",
+              "children": []
+            },
+            {
+              "label": "Eau de Toilette",
+              "type": "category",
+              "slug": "eau-de-toilette",
+              "href": "/category/eau-de-toilette",
+              "children": []
+            },
+            {
+              "label": "Concentrated Perfume Oils",
+              "type": "category",
+              "slug": "perfume-oils",
+              "href": "/category/perfume-oils",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Body & Hygiene",
+          "type": "group",
+          "slug": "fragrance-body-hygiene",
+          "href": null,
+          "children": [
+            {
+              "label": "Deodorant Sprays",
+              "type": "category",
+              "slug": "body-sprays-deodorants",
+              "href": "/category/body-sprays-deodorants",
+              "children": []
+            },
+            {
+              "label": "Antiperspirant Roll-ons",
+              "type": "category",
+              "slug": "antiperspirant-roll-ons",
+              "href": "/category/antiperspirant-roll-ons",
+              "children": []
+            },
+            {
+              "label": "Scented Body Lotions",
+              "type": "category",
+              "slug": "scented-body-lotions",
+              "href": "/category/scented-body-lotions",
+              "children": []
+            },
+            {
+              "label": "Hair & Body Mists",
+              "type": "category",
+              "slug": "hair-body-mists",
+              "href": "/category/hair-body-mists",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Price",
+          "type": "group",
+          "slug": "fragrance-price",
+          "href": null,
+          "children": [
+            {
+              "label": "Under  $30",
+              "type": "category",
+              "slug": "fragrance",
+              "href": "/category/fragrance",
+              "children": []
+            },
+            {
+              "label": "$30 – $50",
+              "type": "category",
+              "slug": "fragrance",
+              "href": "/category/fragrance",
+              "children": []
+            },
+            {
+              "label": "$50 – $70",
+              "type": "category",
+              "slug": "fragrance",
+              "href": "/category/fragrance",
+              "children": []
+            },
+            {
+              "label": "$70 – $100",
+              "type": "category",
+              "slug": "fragrance",
+              "href": "/category/fragrance",
+              "children": []
+            },
+            {
+              "label": "$100+",
+              "type": "category",
+              "slug": "fragrance",
+              "href": "/category/fragrance",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Scent Family",
+          "type": "group",
+          "slug": "fragrance-scent-family",
+          "href": null,
+          "children": [
+            {
+              "label": "Floral",
+              "type": "category",
+              "slug": "floral",
+              "href": "/category/floral",
+              "children": []
+            },
+            {
+              "label": "Warm & Spicy",
+              "type": "category",
+              "slug": "warm-spicy",
+              "href": "/category/warm-spicy",
+              "children": []
+            },
+            {
+              "label": "Fresh",
+              "type": "category",
+              "slug": "fresh",
+              "href": "/category/fresh",
+              "children": []
+            },
+            {
+              "label": "Earthy & woody",
+              "type": "category",
+              "slug": "earthy-woody",
+              "href": "/category/earthy-woody",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Featured Brands",
+          "type": "group",
+          "slug": "fragrance-featured-brands",
+          "href": null,
+          "children": [
+            {
+              "label": "Dolce & Gabbana",
+              "type": "category",
+              "slug": "dolce-gabbana",
+              "href": "/category/dolce-gabbana",
+              "children": []
+            },
+            {
+              "label": "Versace",
+              "type": "category",
+              "slug": "versace",
+              "href": "/category/versace",
+              "children": []
+            },
+            {
+              "label": "Lattafa",
+              "type": "category",
+              "slug": "lattafa",
+              "href": "/category/lattafa",
+              "children": []
+            },
+            {
+              "label": "Afnan",
+              "type": "category",
+              "slug": "afnan",
+              "href": "/category/afnan",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Skincare",
+      "type": "category",
+      "slug": "skincare",
+      "href": "/category/skincare",
+      "children": [
+        {
+          "label": "Moisturizers",
+          "type": "category",
+          "slug": "moisturizers",
+          "href": "/category/moisturizers",
+          "children": [
+            {
+              "label": "Face Creams",
+              "type": "category",
+              "slug": "face-creams",
+              "href": "/category/face-creams",
+              "children": []
+            },
+            {
+              "label": "Night Creams",
+              "type": "category",
+              "slug": "night-creams",
+              "href": "/category/night-creams",
+              "children": []
+            },
+            {
+              "label": "Face Oils",
+              "type": "category",
+              "slug": "face-oils",
+              "href": "/category/face-oils",
+              "children": []
+            },
+            {
+              "label": "Mists & Essences",
+              "type": "category",
+              "slug": "mists-essences",
+              "href": "/category/mists-essences",
+              "children": []
+            },
+            {
+              "label": "BB & CC Cream",
+              "type": "category",
+              "slug": "bb-cc-cream",
+              "href": "/category/bb-cc-cream",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Cleansers",
+          "type": "category",
+          "slug": "cleansers",
+          "href": "/category/cleansers",
+          "children": [
+            {
+              "label": "Face Wash & Cleansers",
+              "type": "category",
+              "slug": "face-wash",
+              "href": "/category/face-wash",
+              "children": []
+            },
+            {
+              "label": "Face Wipes",
+              "type": "category",
+              "slug": "face-wipes",
+              "href": "/category/face-wipes",
+              "children": []
+            },
+            {
+              "label": "Makeup Removers",
+              "type": "category",
+              "slug": "makeup-removers",
+              "href": "/category/makeup-removers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Treatments",
+          "type": "category",
+          "slug": "treatments",
+          "href": "/category/treatments",
+          "children": [
+            {
+              "label": "Face Serums",
+              "type": "category",
+              "slug": "face-serums",
+              "href": "/category/face-serums",
+              "children": []
+            },
+            {
+              "label": "Acne & Blemish Treatments",
+              "type": "category",
+              "slug": "acne-blemish-treatments",
+              "href": "/category/acne-blemish-treatments",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Masks",
+          "type": "category",
+          "slug": "masks",
+          "href": "/category/masks",
+          "children": [
+            {
+              "label": "Face Masks",
+              "type": "category",
+              "slug": "face-masks",
+              "href": "/category/face-masks",
+              "children": []
+            },
+            {
+              "label": "Sheet Masks",
+              "type": "category",
+              "slug": "sheet-masks",
+              "href": "/category/sheet-masks",
+              "children": []
+            },
+            {
+              "label": "Eye Masks",
+              "type": "category",
+              "slug": "eye-masks",
+              "href": "/category/eye-masks",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Sunscreen",
+          "type": "category",
+          "slug": "sunscreen",
+          "href": "/category/sunscreen",
+          "children": [
+            {
+              "label": "Face Sunscreen",
+              "type": "category",
+              "slug": "face-sunscreen",
+              "href": "/category/face-sunscreen",
+              "children": []
+            },
+            {
+              "label": "Body Sunscreen",
+              "type": "category",
+              "slug": "body-sunscreen",
+              "href": "/category/body-sunscreen",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Body Care",
+          "type": "group",
+          "slug": "skincare-body-care",
+          "href": null,
+          "children": [
+            {
+              "label": "Body Cream",
+              "type": "category",
+              "slug": "body-cream",
+              "href": "/category/body-cream",
+              "children": []
+            },
+            {
+              "label": "Body Wash",
+              "type": "category",
+              "slug": "body-wash",
+              "href": "/category/body-wash",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Cosmetics",
+      "type": "category",
+      "slug": "cosmetics",
+      "href": "/category/cosmetics",
+      "children": [
+        {
+          "label": "Face",
+          "type": "category",
+          "slug": "face",
+          "href": "/category/face",
+          "children": [
+            {
+              "label": "Foundation",
+              "type": "category",
+              "slug": "foundation",
+              "href": "/category/foundation",
+              "children": []
+            },
+            {
+              "label": "BB & CC Cream",
+              "type": "category",
+              "slug": "bb-cc-cream",
+              "href": "/category/bb-cc-cream",
+              "children": []
+            },
+            {
+              "label": "Concealer",
+              "type": "category",
+              "slug": "concealer",
+              "href": "/category/concealer",
+              "children": []
+            },
+            {
+              "label": "Tinted Moisturizer",
+              "type": "category",
+              "slug": "tinted-moisturizer",
+              "href": "/category/tinted-moisturizer",
+              "children": []
+            },
+            {
+              "label": "Face Primer",
+              "type": "category",
+              "slug": "face-primer",
+              "href": "/category/face-primer",
+              "children": []
+            },
+            {
+              "label": "Setting Spray & Powder",
+              "type": "category",
+              "slug": "setting-spray-powder",
+              "href": "/category/setting-spray-powder",
+              "children": []
+            },
+            {
+              "label": "Highlighter",
+              "type": "category",
+              "slug": "highlighter",
+              "href": "/category/highlighter",
+              "children": []
+            },
+            {
+              "label": "Contour",
+              "type": "category",
+              "slug": "contour",
+              "href": "/category/contour",
+              "children": []
+            },
+            {
+              "label": "Blush",
+              "type": "category",
+              "slug": "blush",
+              "href": "/category/blush",
+              "children": []
+            },
+            {
+              "label": "Bronzer",
+              "type": "category",
+              "slug": "bronzer",
+              "href": "/category/bronzer",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Eyes",
+          "type": "category",
+          "slug": "eyes",
+          "href": "/category/eyes",
+          "children": [
+            {
+              "label": "Mascara",
+              "type": "category",
+              "slug": "mascara",
+              "href": "/category/mascara",
+              "children": []
+            },
+            {
+              "label": "Eyeliner",
+              "type": "category",
+              "slug": "eyeliner",
+              "href": "/category/eyeliner",
+              "children": []
+            },
+            {
+              "label": "Eye Shadow",
+              "type": "category",
+              "slug": "eyeshadow",
+              "href": "/category/eyeshadow",
+              "children": []
+            },
+            {
+              "label": "Eyeshadow Palettes",
+              "type": "category",
+              "slug": "eyeshadow-palettes",
+              "href": "/category/eyeshadow-palettes",
+              "children": []
+            },
+            {
+              "label": "False Eyelashes",
+              "type": "category",
+              "slug": "false-eyelashes",
+              "href": "/category/false-eyelashes",
+              "children": []
+            },
+            {
+              "label": "Eye Palettes",
+              "type": "category",
+              "slug": "eye-palettes",
+              "href": "/category/eye-palettes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Lips",
+          "type": "category",
+          "slug": "lips",
+          "href": "/category/lips",
+          "children": [
+            {
+              "label": "Lipstick",
+              "type": "category",
+              "slug": "lipsticks",
+              "href": "/category/lipsticks",
+              "children": []
+            },
+            {
+              "label": "Lip Gloss",
+              "type": "category",
+              "slug": "lip-gloss",
+              "href": "/category/lip-gloss",
+              "children": []
+            },
+            {
+              "label": "Lip Oil / Lip Balm",
+              "type": "category",
+              "slug": "lip-balm",
+              "href": "/category/lip-balm",
+              "children": []
+            },
+            {
+              "label": "Liquid Lipstick",
+              "type": "category",
+              "slug": "liquid-lipsticks",
+              "href": "/category/liquid-lipsticks",
+              "children": []
+            },
+            {
+              "label": "Lip Liner",
+              "type": "category",
+              "slug": "lip-liners",
+              "href": "/category/lip-liners",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Tools & Accessories",
+          "type": "category",
+          "slug": "tools-accessories",
+          "href": "/category/tools-accessories",
+          "children": [
+            {
+              "label": "Brushes",
+              "type": "category",
+              "slug": "brushes",
+              "href": "/category/brushes",
+              "children": []
+            },
+            {
+              "label": "Sponges & Applicators",
+              "type": "category",
+              "slug": "sponges-applicators",
+              "href": "/category/sponges-applicators",
+              "children": []
+            },
+            {
+              "label": "Makeup Tools",
+              "type": "category",
+              "slug": "makeup-tools",
+              "href": "/category/makeup-tools",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Sets & Palettes",
+          "type": "category",
+          "slug": "sets-palettes",
+          "href": "/category/sets-palettes",
+          "children": [
+            {
+              "label": "Makeup Palettes",
+              "type": "category",
+              "slug": "makeup-palettes",
+              "href": "/category/makeup-palettes",
+              "children": []
+            },
+            {
+              "label": "Values & Gift Sets",
+              "type": "category",
+              "slug": "values-gift-sets",
+              "href": "/category/values-gift-sets",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "Nails",
+          "type": "category",
+          "slug": "nails",
+          "href": "/category/nails",
+          "children": [
+            {
+              "label": "Nail Polish",
+              "type": "category",
+              "slug": "nail-polish",
+              "href": "/category/nail-polish",
+              "children": []
+            },
+            {
+              "label": "Nail Accessories",
+              "type": "category",
+              "slug": "nail-accessories",
+              "href": "/category/nail-accessories",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Hair Care",
+      "type": "category",
+      "slug": "hair-care",
+      "href": "/category/hair-care",
+      "children": [
+        {
+          "label": "Dry Shampoo",
+          "type": "category",
+          "slug": "dry-shampoo",
+          "href": "/category/dry-shampoo",
+          "children": []
+        },
+        {
+          "label": "Goody",
+          "type": "category",
+          "slug": "goody",
+          "href": "/category/goody",
+          "children": []
+        },
+        {
+          "label": "Hair Clips",
+          "type": "category",
+          "slug": "hair-clips",
+          "href": "/category/hair-clips",
+          "children": []
+        },
+        {
+          "label": "Hair Colour",
+          "type": "category",
+          "slug": "hair-colour",
+          "href": "/category/hair-colour",
+          "children": []
+        },
+        {
+          "label": "Hair Masks & Treatment",
+          "type": "category",
+          "slug": "hair-masks-treatment",
+          "href": "/category/hair-masks-treatment",
+          "children": []
+        },
+        {
+          "label": "Hair Oils And Mists",
+          "type": "category",
+          "slug": "hair-oils-and-mists",
+          "href": "/category/hair-oils-and-mists",
+          "children": []
+        },
+        {
+          "label": "Hair Spray",
+          "type": "category",
+          "slug": "hair-spray",
+          "href": "/category/hair-spray",
+          "children": []
+        },
+        {
+          "label": "Conditioner",
+          "type": "category",
+          "slug": "conditioner",
+          "href": "/category/conditioner",
+          "children": []
+        },
+        {
+          "label": "Shampoo",
+          "type": "category",
+          "slug": "shampoo",
+          "href": "/category/shampoo",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "Offers",
+      "type": "category",
+      "slug": "offers",
+      "href": "/category/offers",
+      "children": [
+        {
+          "label": "Clearance Deals",
+          "type": "category",
+          "slug": "clearance",
+          "href": "/category/clearance",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "Wholesale",
+      "type": "page",
+      "slug": "contact-us",
+      "href": "/pages/contact-us",
+      "children": []
+    }
+  ]
+}

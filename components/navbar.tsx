@@ -5,10 +5,24 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Monogram } from "./monogram";
 import { NAV_LINKS } from "@/lib/site";
+import { useCartStore, selectTotalItems } from "@/lib/store/cart";
+
+function CartIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
+      <path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="10" cy="21" r="1.25" fill="currentColor" stroke="none" />
+      <circle cx="18" cy="21" r="1.25" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const hasHydrated = useCartStore((s) => s.hasHydrated);
+  const totalItems = useCartStore(selectTotalItems);
+  const cartCount = hasHydrated ? totalItems : 0;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
@@ -26,7 +40,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-9 z-50 transition-colors duration-300 ${
         scrolled || open ? "bg-cream shadow-sm" : "bg-transparent"
       }`}
     >
@@ -50,12 +64,23 @@ export function Navbar() {
           ))}
         </ul>
 
-        <Link
-          href="/contact"
-          className="hidden min-h-[44px] items-center justify-center bg-rose px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-rose-deep md:inline-flex"
-        >
-          Get Directions
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/cart" aria-label="Cart" className="relative flex h-11 w-11 items-center justify-center text-ink">
+            <CartIcon className="h-6 w-6" />
+            {cartCount > 0 && (
+              <span className="absolute right-1 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-rose text-[0.6rem] font-medium text-cream">
+                {cartCount > 9 ? "9+" : cartCount}
+              </span>
+            )}
+          </Link>
+
+          <Link
+            href="/contact"
+            className="hidden min-h-[44px] items-center justify-center bg-rose px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-rose-deep md:inline-flex"
+          >
+            Get Directions
+          </Link>
+        </div>
 
         <button
           type="button"
@@ -81,7 +106,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 top-20 z-40 flex flex-col bg-cream md:hidden"
+            className="fixed inset-0 top-[7.25rem] z-40 flex flex-col bg-cream md:hidden"
           >
             <ul className="flex flex-col gap-2 px-8 pt-10">
               {NAV_LINKS.map((link, i) => (

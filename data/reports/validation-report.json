@@ -1,0 +1,1304 @@
+{
+  "generatedAt": "2026-07-10T13:13:24.849Z",
+  "source": {
+    "products": "data/products.json",
+    "categories": "data/categories.json",
+    "navigation": "data/navigation.json",
+    "pages": "data/pages.json"
+  },
+  "summary": {
+    "totalProducts": 510,
+    "totalCategories": 220,
+    "totalPages": 2,
+    "bySeverity": {
+      "error": 0,
+      "warning": 45,
+      "info": 132
+    },
+    "readyForImport": true
+  },
+  "checks": [
+    {
+      "id": "duplicate-products",
+      "description": "Products sharing the same `id`.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "duplicate-slugs",
+      "description": "Products sharing the same `slug`.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "products-without-images",
+      "description": "Products with an empty `images` array.",
+      "severity": "warning",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "products-without-price",
+      "description": "Products where no variant returned a usable numeric price.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "products-without-description",
+      "description": "Products with an empty `description` once HTML tags are stripped.",
+      "severity": "warning",
+      "count": 36,
+      "items": [
+        {
+          "id": 7590769262659,
+          "slug": "charlotte-tilbury-matte-revolution-luminous-modern-matte-lipstick-mini",
+          "title": "Charlotte Tilbury Matte Revolution Luminous Modern Matte Lipstick Mini"
+        },
+        {
+          "id": 7590776995907,
+          "slug": "armaf-club-de-nuit-for-women-eau-de-parfum",
+          "title": "Armaf Club De Nuit For Women Eau De Parfum"
+        },
+        {
+          "id": 7590776963139,
+          "slug": "french-avenue-vulcan-feu-unisex-eau-de-parfum",
+          "title": "French Avenue Vulcan Feu Unisex Eau de Parfum"
+        },
+        {
+          "id": 7590776897603,
+          "slug": "armaf-ombre-oud-intense-black-parfum",
+          "title": "Armaf Ombre Oud Intense Black Parfum"
+        },
+        {
+          "id": 7590776832067,
+          "slug": "liquid-brun-eau-de-parfum",
+          "title": "Liquid Brun Eau De Parfum"
+        },
+        {
+          "id": 7590776799299,
+          "slug": "afnan-9-pm-elixir-parfum-intense",
+          "title": "Afnan 9 PM Elixir Parfum Intense"
+        },
+        {
+          "id": 7590776635459,
+          "slug": "prada-luna-rossa-sport-eau-de-toilette",
+          "title": "Prada Luna Rossa Sport Eau De Toilette"
+        },
+        {
+          "id": 7590776406083,
+          "slug": "versace-bright-crystal-absolu-w-eau-de-parfum-50ml",
+          "title": "Versace Bright Crystal Absolu (W) Eau De Parfum - 50ml"
+        },
+        {
+          "id": 7590776373315,
+          "slug": "versace-bright-crystal-absolu-w-eau-de-parfum-100ml",
+          "title": "Versace Bright Crystal Absolu (W) Eau De Parfum - 100ml"
+        },
+        {
+          "id": 7590774276163,
+          "slug": "prada-luna-rossa-ocean-2pcs-gift-set-100ml-eau-de-parfum-spray-10ml-travel-spray",
+          "title": "PRADA LUNA ROSSA OCEAN 2PCS Gift Set - 100ml Eau de Parfum Spray + 10ml Travel Spray"
+        },
+        {
+          "id": 7590774210627,
+          "slug": "jimmy-choo-i-want-choo-forever-4pcs-gift-set-100ml-eau-de-parfum-spray-100ml-body-lotion-100ml-shower-gel-10ml-mini-spray",
+          "title": "JIMMY CHOO I WANT CHOO FOREVER 4PCS Gift Set - 100ml Eau de Parfum Spray + 100ml Body Lotion + 100ml Shower Gel + 10ml Mini Spray"
+        },
+        {
+          "id": 7590774046787,
+          "slug": "jimmy-choo-man-intense-2pcs-gift-set-100ml-eau-de-toilette-spray-100ml-after-shave-balm",
+          "title": "JIMMY CHOO MAN INTENSE 2PCS Gift Set - 100ml Eau de Toilette Spray + 100ml After Shave Balm"
+        },
+        {
+          "id": 7590774014019,
+          "slug": "guess-seductive-4pcs-gift-set-75ml-eau-de-toilette-spray-15ml-travel-spray-100ml-body-lotion-pouch",
+          "title": "GUESS SEDUCTIVE 4PCS Gift Set - 75ml Eau de Toilette Spray + 15ml Travel Spray + 100ml Body Lotion + Pouch"
+        },
+        {
+          "id": 7590773915715,
+          "slug": "red-door-2pcs-gift-set-100ml-eau-de-parfum-spray-30ml-eau-de-parfum-spray",
+          "title": "RED DOOR 2PCS Gift Set - 100ml Eau de Parfum Spray + 30ml Eau de Parfum Spray"
+        },
+        {
+          "id": 7590773882947,
+          "slug": "fifth-avenue-2pcs-gift-set-125ml-eau-de-parfum-spray-30ml-eau-de-parfum-spray",
+          "title": "FIFTH AVENUE 2PCS Gift Set - 125ml Eau de Parfum Spray + 30ml Eau de Parfum Spray"
+        },
+        {
+          "id": 7590773751875,
+          "slug": "white-diamonds-rouge-2pcs-gift-set-30ml-eau-de-toilette-spray-3-7ml-mini-spray",
+          "title": "WHITE DIAMONDS ROUGE 2PCS Gift Set - 30ml Eau de Toilette Spray + 3.7ml Mini Spray"
+        },
+        {
+          "id": 7590773719107,
+          "slug": "fifth-avenue-3pcs-gift-set-100ml-eau-de-parfum-spray-50ml-shower-gel-50ml-body-lotion",
+          "title": "FIFTH AVENUE 3PCS Gift Set - 100ml Eau de Parfum Spray + 50ml Shower Gel + 50ml Body Lotion"
+        },
+        {
+          "id": 7590773653571,
+          "slug": "dg-the-one-2pcs-gift-set-100ml-eau-de-toilette-spray-50ml-eau-de-toilette-spray",
+          "title": "D&G THE ONE 2PCS Gift Set - 100ml Eau de Toilette Spray + 50ml Eau de Toilette Spray"
+        },
+        {
+          "id": 7590773620803,
+          "slug": "paco-rabanne-1-million-2pcs-gift-set-100ml-eau-de-toilette-spray-20ml-mini-spray",
+          "title": "PACO RABANNE 1-MILLION 2PCS Gift Set - 100ml Eau de Toilette Spray + 20ml Mini Spray"
+        },
+        {
+          "id": 7590772834371,
+          "slug": "srk-combo-diptyque-tam-dao-edp-75-ml-and-dunhill-icon-elite-absolute-100ml",
+          "title": "SRK Combo - Diptyque Tam Dao EDP 75 ml and Dunhill Icon Elite Absolute 100ml"
+        },
+        {
+          "id": 7590772801603,
+          "slug": "coach-love-3pcs-gift-set-100ml-eau-de-parfum-spray-50ml-body-lotion-50ml-shower-gel",
+          "title": "COACH LOVE 3PCS Gift Set - 100ml Eau de Parfum Spray + 50ml Body Lotion + 50ml Shower Gel"
+        },
+        {
+          "id": 7590772539459,
+          "slug": "coach-green-3pcs-gift-set-100ml-eau-de-toilette-spray-100ml-after-shave-15ml-mini-spray",
+          "title": "COACH GREEN 3PCS Gift Set - 100ml Eau de Toilette Spray + 100ml After Shave + 15ml Mini Spray"
+        },
+        {
+          "id": 7590772473923,
+          "slug": "ck-obsession-3pcs-gift-set-125ml-eau-de-toilette-spray-100ml-after-shave-balm-75ml-deo-spray",
+          "title": "CK OBSESSION 3PCS Gift Set - 125ml Eau de Toilette Spray + 100ml After Shave Balm + 75ml Deo Spray"
+        },
+        {
+          "id": 7590771458115,
+          "slug": "ck-one-4pcs-gift-set-200ml-eau-de-toilette-spray-200ml-body-lotion-100ml-shower-gel-15ml-mini-spray",
+          "title": "CK ONE 4PCS Gift Set - 200ml Eau de Toilette Spray + 200ml Body Lotion + 100ml Shower Gel + 15ml Mini Spray"
+        },
+        {
+          "id": 7590770671683,
+          "slug": "power-bullet-mat-lipstick",
+          "title": "Power Bullet Mat Lipstick"
+        },
+        {
+          "id": 7590769590339,
+          "slug": "charlotte-tilbury-rock-n-kohl-iconic-liquid-eyeliner-pencil",
+          "title": "Charlotte Tilbury Rock N Kohl Iconic Liquid Eyeliner Pencil"
+        },
+        {
+          "id": 7590769426499,
+          "slug": "ludicrous-lights-lip-gloss",
+          "title": "Ludicrous Lights Lip Gloss"
+        },
+        {
+          "id": 7590769197123,
+          "slug": "charlotte-tilbury-k-i-s-s-i-n-g-lipstick-in-yes-honey",
+          "title": "Charlotte Tilbury K.I.S.S.I.N.G Lipstick in Yes Honey"
+        },
+        {
+          "id": 7590769131587,
+          "slug": "charlotte-tilbury-colour-chameleon-colour-morphing-eye-shadow-pencil",
+          "title": "Charlotte Tilbury Colour Chameleon Colour Morphing Eye Shadow Pencil"
+        },
+        {
+          "id": 7590769066051,
+          "slug": "charlotte-tilbury-brow-lift-brow-pencil",
+          "title": "Charlotte Tilbury Brow Lift Brow Pencil"
+        },
+        {
+          "id": 7590768672835,
+          "slug": "charlotte-tilbury-the-classic-eye-powder-pencil",
+          "title": "Charlotte Tilbury The Classic Eye Powder Pencil"
+        },
+        {
+          "id": 7590768017475,
+          "slug": "armaf-club-de-nuit-women-eau-de-parfum",
+          "title": "Armaf Club De NUIT Women Eau De Parfum"
+        },
+        {
+          "id": 7590764183619,
+          "slug": "ysl-y-le-parfum",
+          "title": "YSL Y Le Parfum"
+        },
+        {
+          "id": 7588917805123,
+          "slug": "ck-one-2pcs-gift-set-50ml-eau-de-toilette-spray-100ml-shower-gel",
+          "title": "CK ONE 2PCS Gift Set - 50ml Eau de Toilette Spray + 100ml Shower Gel"
+        },
+        {
+          "id": 7588894507075,
+          "slug": "wet-n-wild-wild-heart-artistry-palette",
+          "title": "Wet n Wild Wild Heart Artistry Palette"
+        },
+        {
+          "id": 7588892540995,
+          "slug": "power-bullet-mat-lipstick-ride",
+          "title": "Power Bullet Mat Lipstick Ride"
+        }
+      ]
+    },
+    {
+      "id": "products-without-category",
+      "description": "Products that fell back to `uncategorized` - no product_type/tag matched a known category title.",
+      "severity": "warning",
+      "count": 9,
+      "items": [
+        {
+          "id": 7606540992579,
+          "slug": "rihanna-rebl-fleur-for-women-eau-de-parfum",
+          "title": "Rihanna Reb'L Fleur For Women Eau de Parfum",
+          "tags": [
+            "Agcosmetics.ca",
+            "Audacious Scent",
+            "Canadian Beauty Shop",
+            "Fruity Chypre Fragrance",
+            "Rihanna Fragrance",
+            "Rihanna Reb'L Fleur",
+            "Women's Perfume"
+          ]
+        },
+        {
+          "id": 7606539747395,
+          "slug": "ysl-myslf-eau-de-parfum-100ml-10ml",
+          "title": "YSL MYSLF Eau de Parfum 2PCS Gift Set - - 100ml Eau de Parfum Spray + 10ml Eau de Parfum Mini Spray",
+          "tags": [
+            "Agcosmetics.ca",
+            "Canadian Beauty Shop",
+            "Men's Fragrance",
+            "YSL Gift Set",
+            "YSL MYSLF",
+            "Yves Saint Laurent"
+          ]
+        },
+        {
+          "id": 7606431809603,
+          "slug": "cerave-hydrating-mineral-sunscreen-spf-50-body-lotion",
+          "title": "CeraVe Hydrating Mineral Sunscreen SPF 50 Body Lotion",
+          "tags": [
+            "Agcosmetics.ca",
+            "CeraVe Canada.",
+            "CeraVe Sunscreen",
+            "Mineral SPF 50",
+            "Sensitive Skin Sun Protection",
+            "Zinc Oxide Sunscreen"
+          ]
+        },
+        {
+          "id": 7604145291331,
+          "slug": "hummer-yellow-eau-de-toilette-spray-for-mens",
+          "title": "Hummer Yellow Eau de Toilette Spray for Men",
+          "tags": []
+        },
+        {
+          "id": 7590774472771,
+          "slug": "versace-bright-crystal-for-women-eau-de-toilette",
+          "title": "Versace Bright Crystal for Women Eau De Toilette",
+          "tags": [
+            "Perfume",
+            "Women’s Fragrance"
+          ]
+        },
+        {
+          "id": 7590774440003,
+          "slug": "versace-bright-crystal-absolu-for-women-eau-de-parfum",
+          "title": "Versace Bright Crystal Absolu for Women Eau De Parfum",
+          "tags": [
+            "Perfume",
+            "Women’s Fragrance"
+          ]
+        },
+        {
+          "id": 7590773915715,
+          "slug": "red-door-2pcs-gift-set-100ml-eau-de-parfum-spray-30ml-eau-de-parfum-spray",
+          "title": "RED DOOR 2PCS Gift Set - 100ml Eau de Parfum Spray + 30ml Eau de Parfum Spray",
+          "tags": [
+            "Perfume Gift sets",
+            "Women’s Fragrance"
+          ]
+        },
+        {
+          "id": 7590773751875,
+          "slug": "white-diamonds-rouge-2pcs-gift-set-30ml-eau-de-toilette-spray-3-7ml-mini-spray",
+          "title": "WHITE DIAMONDS ROUGE 2PCS Gift Set - 30ml Eau de Toilette Spray + 3.7ml Mini Spray",
+          "tags": [
+            "Perfume Gift sets",
+            "Women’s Fragrance"
+          ]
+        },
+        {
+          "id": 7590756515907,
+          "slug": "armani-my-way-intense-eau-de-parfum",
+          "title": "Armani My Way Intense Eau de Parfum",
+          "tags": [
+            "Perfumes",
+            "Women’s Fragrance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product-category-not-found",
+      "description": "Products whose `category` slug has no matching entry in categories.json.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "categories-without-slug",
+      "description": "Categories missing a usable `slug`.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "broken-navigation-links",
+      "description": "Nav entries whose slug doesn't resolve to a known category/page, or whose href is still an external URL.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "invalid-image-urls",
+      "description": "Product images whose `src` is missing or not a well-formed http(s) URL.",
+      "severity": "error",
+      "count": 0,
+      "items": []
+    },
+    {
+      "id": "categories-needing-manual-mapping",
+      "description": "Categories flagged for human review: unlinked from nav, UI-only groupings, cross-linked, or empty.",
+      "severity": "info",
+      "count": 132,
+      "items": [
+        {
+          "slug": "afnan",
+          "title": "Afnan",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary"
+          ]
+        },
+        {
+          "slug": "ag-perfume-and-cosmetics",
+          "title": "Ag perfume and cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "al-haramain",
+          "title": "Al Haramain",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "american-crew",
+          "title": "American Crew",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "antiperspirant-roll-ons",
+          "title": "Antiperspirant Roll-ons",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "arabiyat-prestige",
+          "title": "Arabiyat Prestige",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "armani",
+          "title": "Armani",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "aura-fragrances",
+          "title": "Aura Fragrances",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "axe",
+          "title": "AXE",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "bath-amp-body-works",
+          "title": "Bath &amp; Body Works",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "bb-cc-cream",
+          "title": "BB & CC Cream",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "bestseller-cosmetics",
+          "title": "Bestseller Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "bestseller-skincare",
+          "title": "Bestseller Skincare",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "bestsellers",
+          "title": "Bestsellers",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "bio-oil",
+          "title": "Bio oil",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "bluma",
+          "title": "Bluma",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "blush-highlighters",
+          "title": "Blush & Highlighters",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "body-hygiene",
+          "title": "Body & Hygiene",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "body-sunscreen",
+          "title": "Body Sunscreen",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "boxing-day",
+          "title": "Boxing Day",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "brands",
+          "title": "Brands",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection"
+          ]
+        },
+        {
+          "slug": "cerave",
+          "title": "CeraVe",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "cetaphil",
+          "title": "Cetaphil",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "chanel",
+          "title": "Chanel",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "charlotte-tilbury",
+          "title": "Charlotte Tilbury",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "christmas-cosmetics-offers-page",
+          "title": "Christmas Cosmetics Offers Page",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "clearance",
+          "title": "Clearance Deals",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary"
+          ]
+        },
+        {
+          "slug": "color-correcting",
+          "title": "Color Correcting",
+          "reasons": [
+            "not linked from the site navigation",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "contour",
+          "title": "Contour",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "cosmo-cosmetics",
+          "title": "Cosmo Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "david-beckham",
+          "title": "David Beckham",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "davidoff",
+          "title": "Davidoff",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "dior-1",
+          "title": "Dior",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "discount-eligible",
+          "title": "Discount Eligible",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "dolce-gabbana",
+          "title": "Dolce & Gabbana",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "dove",
+          "title": "Dove",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "dry-shampoo",
+          "title": "Dry Shampoo",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "e-l-f-cosmetics",
+          "title": "E.L.F. Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "elixir",
+          "title": "Elixir",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "elizabeth-arden",
+          "title": "Elizabeth Arden",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "elizabeth-taylor",
+          "title": "Elizabeth Taylor",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "english-laundry",
+          "title": "English Laundry",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "eye-palettes",
+          "title": "Eye Palettes",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "eyelashes",
+          "title": "Eyelashes",
+          "reasons": [
+            "not linked from the site navigation",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "eyelashes-eye-accessories",
+          "title": "Eyelashes & Eye Accessories",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "eyeliner",
+          "title": "Eyeliner",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "eyeshadow-palettes",
+          "title": "Eyeshadow Palettes",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "face-primer",
+          "title": "Face Primer",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "face-wipes",
+          "title": "Face Wipes",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "false-eyelashes",
+          "title": "False Eyelashes",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "floral",
+          "title": "Floral",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "fragrance",
+          "title": "Fragrance",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary"
+          ]
+        },
+        {
+          "slug": "fragrance-body-hygiene",
+          "title": "Body & Hygiene",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection"
+          ]
+        },
+        {
+          "slug": "fragrance-featured-brands",
+          "title": "Featured Brands",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "fragrance-popular",
+          "title": "Popular",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection"
+          ]
+        },
+        {
+          "slug": "fragrance-price",
+          "title": "Price",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "fragrance-scent-family",
+          "title": "Scent Family",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection"
+          ]
+        },
+        {
+          "slug": "fragrance-type",
+          "title": "Type",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection"
+          ]
+        },
+        {
+          "slug": "french-avenue",
+          "title": "French Avenue",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "garnier-1",
+          "title": "Garnier",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "giorgio-armani-1",
+          "title": "Giorgio Armani",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "giorgio-armani-2",
+          "title": "Giorgio Armani",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "goody",
+          "title": "Goody",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "guess-1",
+          "title": "Guess",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "hair-body-mists",
+          "title": "Hair & Body Mists",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "hair-clips",
+          "title": "Hair Clips",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "hair-spray",
+          "title": "Hair Spray",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "hermes",
+          "title": "HERMÈS",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "huda-beauty",
+          "title": "Huda Beauty",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "hummer",
+          "title": "Hummer",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "kiehls",
+          "title": "Kiehl's",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "lattafa",
+          "title": "Lattafa",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary"
+          ]
+        },
+        {
+          "slug": "lattafa-1",
+          "title": "Lattafa",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "le-falcone",
+          "title": "Le Falcone",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "lip-oil",
+          "title": "Lip Oil",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "lip-palette",
+          "title": "Lip Palette",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "loreal",
+          "title": "L'Oréal",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "loreal-paris",
+          "title": "L'Oréal Paris",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "luxury",
+          "title": "Luxury",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "mac-cosmetics-1",
+          "title": "MAC Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "make-up-for-ever",
+          "title": "Make Up For Ever",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "makeup-palettes",
+          "title": "Makeup Palettes",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "marc-anthony",
+          "title": "Marc Anthony",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "mascara",
+          "title": "Mascara",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "maybelline",
+          "title": "Maybelline",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "maybelline-new-york",
+          "title": "Maybelline New York",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "mens-giftset",
+          "title": "Men's Giftset",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "milani",
+          "title": "Milani",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "mists-essences",
+          "title": "Mists & Essences",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "moonrin-cosmetics",
+          "title": "Moonrin Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "nautica",
+          "title": "Nautica",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "neutrogena",
+          "title": "Neutrogena",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "new-cosmetics",
+          "title": "New Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "new-in",
+          "title": "New In",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "new-skincare",
+          "title": "New Skincare",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "nivea",
+          "title": "Nivea",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "nyx",
+          "title": "NYX",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "nyx-cosmetics",
+          "title": "NYX Cosmetics",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "oud",
+          "title": "Oud",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "palette",
+          "title": "Palette",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "parfum",
+          "title": "Parfum",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "perfume-oils",
+          "title": "Perfume oils",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "popular",
+          "title": "Popular",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "prada",
+          "title": "Prada",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "primer-corrector",
+          "title": "Primer / Corrector",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "ralph-lauren",
+          "title": "Ralph lauren",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "rasasi",
+          "title": "Rasasi",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "revlon",
+          "title": "Revlon",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "rihanna",
+          "title": "Rihanna",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "salvatore-ferragamo",
+          "title": "Salvatore Ferragamo",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "scented-body-lotions",
+          "title": "Scented Body Lotions",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "schmidts",
+          "title": "Schmidts",
+          "reasons": [
+            "not linked from the site navigation",
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "sephora",
+          "title": "Sephora",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "sheamoisture",
+          "title": "SheaMoisture",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "sheet-masks",
+          "title": "Sheet Masks",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "skincare-body-care",
+          "title": "Body Care",
+          "reasons": [
+            "UI-only grouping node, not a real Shopify collection"
+          ]
+        },
+        {
+          "slug": "sooae",
+          "title": "Sooae",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "sponges-applicators",
+          "title": "Sponges & Applicators",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "swiss-army",
+          "title": "Swiss Army",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "tinted-moisturizer",
+          "title": "Tinted Moisturizer",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "tools-accessories",
+          "title": "Tools & Accessories",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "uncategorized",
+          "title": "Uncategorized",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "unisex",
+          "title": "Unisex",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "uomo",
+          "title": "Uomo",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "urban-decay-1",
+          "title": "Urban Decay",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "values-gift-sets",
+          "title": "Values & Gift Sets",
+          "reasons": [
+            "has zero products"
+          ]
+        },
+        {
+          "slug": "versace",
+          "title": "Versace",
+          "reasons": [
+            "reachable from multiple nav branches - current parent may be arbitrary"
+          ]
+        },
+        {
+          "slug": "wet-n-wild",
+          "title": "Wet N Wild",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "womens-deodorants-body-sprays",
+          "title": "Women's Deodorants/Body Sprays",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "womens-giftset",
+          "title": "Women’s Giftset",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "ysl-1",
+          "title": "YSL",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        },
+        {
+          "slug": "ysl-2",
+          "title": "YSL",
+          "reasons": [
+            "not linked from the site navigation"
+          ]
+        }
+      ]
+    }
+  ]
+}

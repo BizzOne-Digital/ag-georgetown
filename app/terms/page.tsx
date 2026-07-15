@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <section className="mx-auto max-w-3xl px-6 pb-24 pt-32 md:pt-40">
+    <section className="mx-auto max-w-3xl px-6 pb-24 pt-40 md:pt-48">
       <h1 className="font-display text-h2 font-medium text-ink">Terms of Service</h1>
       <p className="mt-4 font-body text-sm text-ink/50">
         Last updated: {new Date().toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
@@ -30,6 +30,7 @@ export default function TermsPage() {
           </p>
         </div>
 
+        {/* TODO: revise once online checkout ships - this is accurate today (browsing works, checkout doesn't yet) */}
         <div>
           <h2 className="font-display text-h3 font-medium text-ink">No Online Purchasing</h2>
           <p className="mt-3">

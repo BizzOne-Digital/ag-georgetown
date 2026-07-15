@@ -1,9 +1,12 @@
 import { ScrollReveal, RevealItem } from "./scroll-reveal";
 
+// "Browse Online" now reflects a real capability (the full catalog is
+// browsable at /products) - the other two steps deliberately don't promise
+// checkout or a shipping/pickup choice, since neither exists yet.
 const STEPS = [
-  { num: "1", title: "Browse Online", body: "Explore our collection and current deals from anywhere." },
+  { num: "1", title: "Browse Online", body: "See what's in stock and current prices from anywhere." },
   { num: "2", title: "Visit In-Store", body: "Come see, smell, and try before you buy at 130 Guelph St." },
-  { num: "3", title: "Save on the Spot", body: "Walk out with authentic products at liquidation prices, no waiting for shipping." },
+  { num: "3", title: "Take It Home Today", body: "No shipping wait - walk out with it at liquidation prices." },
 ];
 
 export function HowItWorks() {

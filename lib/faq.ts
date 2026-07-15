@@ -12,7 +12,8 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "Do you offer online ordering?",
-    answer: "Not yet - we're an in-store experience for now, but our online offers page always reflects what's currently available.",
+    answer:
+      "You can browse our full catalog and check real-time pricing and availability online any time. To complete a purchase, visit us in-store at 130 Guelph St - online checkout is coming soon.",
   },
   {
     question: "Can I return or exchange items?",
