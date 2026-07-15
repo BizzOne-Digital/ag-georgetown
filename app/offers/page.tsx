@@ -8,6 +8,11 @@ import { Button } from "@/components/button";
 import { parseCatalogFilters, type SearchParamValue } from "@/lib/catalog/search-params";
 import { SITE_URL } from "@/lib/site";
 
+// See app/products/[slug]/page.tsx for why this is needed - without it, a
+// build-time prerender attempt calls connectToDatabase() for real and fails
+// the whole build if MONGODB_URI isn't configured in that environment yet.
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Current Deals & Bundle Offers | AG Liquidation Georgetown",
   description:

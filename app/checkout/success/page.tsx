@@ -6,6 +6,12 @@ import { getOrderByNumber } from "@/lib/repositories/order.repository";
 import { formatPrice } from "@/components/catalog/price-tag";
 import { Button } from "@/components/button";
 
+// See app/products/[slug]/page.tsx for why this is needed - without it, a
+// build-time prerender attempt calls Stripe/connectToDatabase() for real and
+// fails the whole build if those env vars aren't configured in that
+// environment yet.
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Order Confirmed | AG Liquidation Georgetown",
   robots: { index: false }, // this is a per-order page, never worth indexing

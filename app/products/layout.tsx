@@ -1,6 +1,11 @@
 import { getMegaMenu } from "@/lib/repositories/category.repository";
 import { MegaMenu } from "@/components/catalog/mega-menu";
 
+// This layout calls the database directly (getMegaMenu below), so it needs
+// the same build-time opt-out as its child pages - see
+// app/products/[slug]/page.tsx for the full explanation.
+export const dynamic = "force-dynamic";
+
 // Scoped to /products and /products/[slug] only - the mega-menu / functional
 // storefront treatment doesn't apply to the rest of the site (home, about,
 // offers, contact keep their existing editorial design untouched).

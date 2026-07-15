@@ -7,6 +7,13 @@ import { ProductPurchasePanel } from "@/components/catalog/product-purchase-pane
 import { RelatedProducts } from "@/components/catalog/related-products";
 import { SITE_URL } from "@/lib/site";
 
+// Forces this route to always render per-request instead of being probed at
+// build time. Without this, Next's build step calls generateMetadata to
+// determine the route's caching strategy, which hits connectToDatabase() for
+// real - and fails the whole build if MONGODB_URI isn't configured in that
+// environment yet (same class of bug as lib/stripe.ts's lazy getStripe()).
+export const dynamic = "force-dynamic";
+
 interface ProductPageProps {
   params: { slug: string };
 }

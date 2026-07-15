@@ -18,6 +18,12 @@ import { getBestSellingProducts, getBundleProducts, getTopVendors } from "@/lib/
 import { FAQ_ITEMS } from "@/lib/faq";
 import { SITE_URL } from "@/lib/site";
 
+// Forces per-request rendering instead of a build-time prerender attempt,
+// which would call connectToDatabase() for real and fail the whole build if
+// MONGODB_URI isn't configured in that environment yet (see
+// app/products/[slug]/page.tsx for the full explanation).
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "AG Liquidation Perfume & Cosmetics | Georgetown, ON",
   description:
