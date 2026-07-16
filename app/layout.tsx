@@ -6,6 +6,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageTransition } from "@/components/page-transition";
 import { CartHydrationBoundary } from "@/components/cart-hydration-boundary";
+import { WishlistHydrationBoundary } from "@/components/wishlist-hydration-boundary";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-body text-ink">
         <CartHydrationBoundary />
+        <WishlistHydrationBoundary />
         <PromoBar />
         <Navbar />
         <main>

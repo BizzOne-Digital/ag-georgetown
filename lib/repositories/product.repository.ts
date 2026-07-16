@@ -191,6 +191,24 @@ export async function getCatalogData(filters: CatalogFilters): Promise<CatalogRe
   return { products: sorted.slice(0, limit), total: sorted.length, facets };
 }
 
+// Home's "Shop by Category" tiles show this as a scale signal - counted the
+// same way a plain /products?category=slug link would (id-or-tag-match, no
+// other filters), not Category.productCount, which only reflects direct
+// assignment and would undercount for the same reason getCatalogData's
+// comment above explains (~80% of categories have zero directly-assigned
+// products; tag-text matching is what makes most of them show anything).
+export async function getCategoryProductCount(slug: string): Promise<number> {
+  await connectToDatabase();
+  const scope = await getDescendantCategoryScope(slug);
+  if (scope.ids.length === 0) return 0;
+
+  const titlePatterns = Array.from(scope.titles, (title) => new RegExp(`\\b${escapeRegExp(title)}\\b`, "i"));
+  return Product.countDocuments({
+    isActive: true,
+    $or: [{ category: { $in: scope.ids } }, { tags: { $in: titlePatterns } }],
+  });
+}
+
 export async function getRelatedProducts(categoryId: Types.ObjectId | string, excludeProductId: Types.ObjectId | string, limit = 4) {
   await connectToDatabase();
   return Product.find({ category: categoryId, _id: { $ne: excludeProductId }, isActive: true })
@@ -220,6 +238,60 @@ export async function getBestSellingProducts(limit = 12) {
 
 export async function getBundleProducts(limit = 12) {
   return findActiveByTagPattern(GIFT_SET_TAG_RE, limit);
+}
+
+// Home's "Shop Our Best Sellers" carousel: prefers real bestseller-tagged,
+// in-stock products, one per category (so the row isn't 5 foundations) -
+// falls back to any in-stock product if there aren't enough tagged ones to
+// fill the row and pads with repeats-allowed leftovers only as a last resort.
+export async function getHomeBestSellers(limit = 5): Promise<IProduct[]> {
+  await connectToDatabase();
+
+  const diversify = (pool: IProduct[]): IProduct[] => {
+    const seen = new Set<string>();
+    const diverse: IProduct[] = [];
+    for (const p of pool) {
+      const categoryId = String(p.category);
+      if (seen.has(categoryId)) continue;
+      seen.add(categoryId);
+      diverse.push(p);
+      if (diverse.length === limit) break;
+    }
+    if (diverse.length < limit) {
+      for (const p of pool) {
+        if (diverse.length === limit) break;
+        if (!diverse.includes(p)) diverse.push(p);
+      }
+    }
+    return diverse;
+  };
+
+  const tagged = await Product.find({ isActive: true, tags: BESTSELLER_TAG_RE })
+    .sort({ stock: -1 })
+    .limit(limit * 6)
+    .lean<IProduct[]>();
+  const inStockTagged = tagged.filter(isInStock);
+
+  if (inStockTagged.length >= limit) return diversify(inStockTagged);
+
+  const anyInStock = await Product.find({ isActive: true })
+    .sort({ stock: -1 })
+    .limit(limit * 6)
+    .lean<IProduct[]>();
+  return diversify([...inStockTagged, ...anyInStock.filter(isInStock)]);
+}
+
+// Home's "New Arrivals" carousel: newest-imported first, preferring in-stock
+// (same fallback shape as getHomeBestSellers - if too few of the newest are
+// in stock, widen to whatever's available rather than show an empty row).
+export async function getNewArrivals(limit = 5): Promise<IProduct[]> {
+  await connectToDatabase();
+  const candidates = await Product.find({ isActive: true })
+    .sort({ createdAt: -1 })
+    .limit(limit * 4)
+    .lean<IProduct[]>();
+  const inStock = candidates.filter(isInStock);
+  return (inStock.length >= limit ? inStock : candidates).slice(0, limit);
 }
 
 export interface VendorCount {

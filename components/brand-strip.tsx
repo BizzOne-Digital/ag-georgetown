@@ -13,7 +13,7 @@ export function BrandStrip({ vendors, className = "" }: BrandStripProps) {
   if (vendors.length === 0) return null;
 
   return (
-    <div className={`flex gap-10 overflow-x-auto pb-2 ${className}`}>
+    <div className={`flex flex-wrap gap-x-10 gap-y-4 ${className}`}>
       {vendors.map((vendor) => (
         <FoilSweep key={vendor} className="shrink-0">
           <Link

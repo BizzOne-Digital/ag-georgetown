@@ -4,6 +4,11 @@ import { OffersMarquee } from "@/components/offers-marquee";
 import { CategoryTile } from "@/components/category-tile";
 import { ProductRow } from "@/components/product-row";
 import { BrandStrip } from "@/components/brand-strip";
+import { ProductCarousel } from "@/components/product-carousel";
+import { toBestSellerCardData } from "@/components/best-seller-card";
+import { CategoryBannerRow } from "@/components/category-banner-row";
+import { TrustStrip } from "@/components/trust-strip";
+import { PromoBanner } from "@/components/promo-banner";
 import { TrustBadgeRow } from "@/components/trust-badge-row";
 import { NewsletterBand } from "@/components/newsletter-band";
 import { HowItWorks } from "@/components/how-it-works";
@@ -13,8 +18,24 @@ import { InstagramTeaser } from "@/components/instagram-teaser";
 import { VisitUsSection } from "@/components/visit-us-section";
 import { SectionHeading } from "@/components/section-heading";
 import { PerfumeBottleArt, LipstickArt, SkincareJarArt } from "@/components/placeholder-art";
-import { AG_HERO_1, FRAGRANCE_CATEGORY_TILE, MAKEUP_CATEGORY_TILE, SKINCARE_CATEGORY_TILE } from "@/lib/images";
-import { getBestSellingProducts, getBundleProducts, getTopVendors } from "@/lib/repositories/product.repository";
+import {
+  AG_HOME_HERO,
+  FRAGRANCE_CATEGORY_TILE,
+  MAKEUP_CATEGORY_TILE,
+  SKINCARE_CATEGORY_TILE,
+  FRAGRANCE_FOR_HER_BANNER,
+  FRAGRANCE_FOR_HIM_BANNER,
+  COSMETICS_BANNER,
+  PROMO_BANNER_IMAGE,
+} from "@/lib/images";
+import {
+  getBestSellingProducts,
+  getBundleProducts,
+  getTopVendors,
+  getHomeBestSellers,
+  getNewArrivals,
+  getCategoryProductCount,
+} from "@/lib/repositories/product.repository";
 import { FAQ_ITEMS } from "@/lib/faq";
 import { SITE_URL } from "@/lib/site";
 
@@ -41,11 +62,23 @@ export const metadata: Metadata = {
 const HOME_FAQ_ITEMS = FAQ_ITEMS.slice(0, 4);
 
 export default async function HomePage() {
-  const [bestSellers, bundles, vendors] = await Promise.all([
-    getBestSellingProducts(12),
-    getBundleProducts(12),
-    getTopVendors(16),
-  ]);
+  const [bestSellers, bundles, vendors, homeBestSellers, newArrivals, fragranceCount, cosmeticsCount, skincareCount] =
+    await Promise.all([
+      getBestSellingProducts(12),
+      getBundleProducts(12),
+      getTopVendors(16),
+      getHomeBestSellers(5),
+      getNewArrivals(5),
+      getCategoryProductCount("fragrance"),
+      getCategoryProductCount("cosmetics"),
+      getCategoryProductCount("skincare"),
+    ]);
+
+  const CATEGORY_BANNER_TILES = [
+    { name: "Fragrance for Her", image: FRAGRANCE_FOR_HER_BANNER, href: "/products?category=fragrance&type=Female" },
+    { name: "Fragrance for Him", image: FRAGRANCE_FOR_HIM_BANNER, href: "/products?category=fragrance&type=Male" },
+    { name: "Cosmetics", image: COSMETICS_BANNER, href: "/products?category=cosmetics" },
+  ];
 
   return (
     <>
@@ -53,10 +86,12 @@ export default async function HomePage() {
         eyebrow="Georgetown's Destination for Authentic Beauty"
         title="Luxury Fragrance & Cosmetics. Liquidation Prices."
         subtitle="Authentic, brand-name perfumes, makeup, and skincare for everyday use and special occasions - at prices that make affordable luxury real."
-        image={AG_HERO_1}
+        image={AG_HOME_HERO}
         primaryCta={{ href: "/offers", label: "Shop the Deals" }}
         secondaryCta={{ href: "/contact", label: "Get Directions" }}
       />
+
+      <TrustStrip />
 
       <OffersMarquee />
 
@@ -71,6 +106,8 @@ export default async function HomePage() {
               name="Fragrance"
               description="Designer scents for him & her - Dior, Gucci, Versace and more"
               href="/products?category=fragrance"
+              offset="up"
+              productCount={fragranceCount}
             />
             <CategoryTile
               Art={LipstickArt}
@@ -78,6 +115,8 @@ export default async function HomePage() {
               name="Makeup"
               description="Everyday essentials to full-glam, at prices that don't compromise"
               href="/products?category=cosmetics"
+              offset="down"
+              productCount={cosmeticsCount}
             />
             <CategoryTile
               Art={SkincareJarArt}
@@ -85,6 +124,8 @@ export default async function HomePage() {
               name="Skincare"
               description="Trusted formulas for every skin type and concern"
               href="/products?category=skincare"
+              offset="up"
+              productCount={skincareCount}
             />
           </div>
         </div>
@@ -107,6 +148,19 @@ export default async function HomePage() {
           <BrandStrip vendors={vendors.map((v) => v.vendor)} />
         </div>
       </section>
+
+      <ProductCarousel title="Shop Our Best Sellers" products={homeBestSellers.map(toBestSellerCardData)} />
+
+      <CategoryBannerRow tiles={CATEGORY_BANNER_TILES} />
+
+      <ProductCarousel
+        title="New Arrivals"
+        ctaHref="/products?sort=date-desc"
+        ctaLabel="See What's New"
+        products={newArrivals.map(toBestSellerCardData)}
+      />
+
+      <PromoBanner image={PROMO_BANNER_IMAGE} />
 
       <TrustBadgeRow />
 
