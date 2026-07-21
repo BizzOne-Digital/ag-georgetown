@@ -11,7 +11,11 @@ import Link from "next/link";
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white">
-      <div className="border-b border-gray-300 bg-gray-100 px-6 py-4">
+      {/* Navbar is `fixed top-9 h-20 z-50` (see components/navbar.tsx), and
+          PromoBar above it is `fixed top-0 h-9 z-[60]` - without this offset
+          this bar renders underneath both at y=0, the same mega-menu-offset
+          bug app/products/layout.tsx already documents. */}
+      <div className="mt-[7.25rem] border-b border-gray-300 bg-gray-100 px-6 py-4">
         <div className="mx-auto flex max-w-5xl items-center gap-6">
           <span className="font-mono text-sm font-bold uppercase tracking-wide text-gray-700">AG Admin</span>
           <nav className="flex gap-4 font-mono text-sm">
