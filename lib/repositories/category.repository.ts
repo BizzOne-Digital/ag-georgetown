@@ -90,7 +90,8 @@ export async function getDescendantCategoryScope(slug: string): Promise<Category
   }
 
   const ids: Types.ObjectId[] = [root._id];
-  const titles = new Set<string>([root.title.trim().toLowerCase()]);
+  const titles = new Set<string>();
+  if (root.title) titles.add(root.title.trim().toLowerCase());
   const stack: Types.ObjectId[] = [root._id];
 
   while (stack.length > 0) {
@@ -98,7 +99,7 @@ export async function getDescendantCategoryScope(slug: string): Promise<Category
     const kids = childrenByParent.get(String(current)) ?? [];
     for (const kid of kids) {
       ids.push(kid._id);
-      titles.add(kid.title.trim().toLowerCase());
+      if (kid.title) titles.add(kid.title.trim().toLowerCase());
       stack.push(kid._id);
     }
   }
