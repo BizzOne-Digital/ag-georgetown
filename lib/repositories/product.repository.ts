@@ -6,7 +6,7 @@ import { classifyProductType, isInStock } from "@/lib/catalog/classify";
 import { buildFacets } from "@/lib/catalog/facets";
 import { isOnSale } from "@/lib/catalog/pricing";
 import { sortProducts } from "@/lib/catalog/sort";
-import { sortByPriorityFirst } from "@/lib/catalog/priorityProducts";
+import { sortByPriorityFirst, PRIORITY_PATTERNS } from "@/lib/catalog/priorityProducts";
 import { DEFAULT_PAGE_SIZE, type AnnotatedProduct, type CatalogFilters } from "@/lib/catalog/types";
 import { getDescendantCategoryScope } from "./category.repository";
 
@@ -247,10 +247,12 @@ export async function getBundleProducts(limit = 12) {
   return findActiveByTagPattern(GIFT_SET_TAG_RE, limit);
 }
 
-// Home's "Shop Our Best Sellers" carousel: prefers real bestseller-tagged,
-// in-stock products, one per category (so the row isn't 5 foundations) -
-// falls back to any in-stock product if there aren't enough tagged ones to
-// fill the row and pads with repeats-allowed leftovers only as a last resort.
+// Home's "Shop Our Best Sellers" carousel: shows only the hand-picked hero
+// products (see priorityProducts.ts) whenever enough of them are in stock -
+// no mixing in of unrelated bestseller-tagged items (lipstick, skincare,
+// etc.) that used to sneak in via category-diversification padding. Only
+// falls back to real bestseller-tagged / any-in-stock products, one per
+// category, if the priority list can't fill the row on its own.
 export async function getHomeBestSellers(limit = 5): Promise<IProduct[]> {
   await connectToDatabase();
 
@@ -273,19 +275,29 @@ export async function getHomeBestSellers(limit = 5): Promise<IProduct[]> {
     return diverse;
   };
 
+  const priorityPool = await Product.find({ isActive: true, title: { $in: PRIORITY_PATTERNS } })
+    .lean<IProduct[]>();
+  const inStockPriority = sortByPriorityFirst(priorityPool.filter(isInStock));
+
+  if (inStockPriority.length >= limit) return inStockPriority.slice(0, limit);
+
   const tagged = await Product.find({ isActive: true, tags: BESTSELLER_TAG_RE })
     .sort({ stock: -1 })
     .limit(limit * 6)
     .lean<IProduct[]>();
   const inStockTagged = sortByPriorityFirst(tagged.filter(isInStock));
+  const combinedTagged = sortByPriorityFirst([
+    ...inStockPriority,
+    ...inStockTagged.filter((p) => !inStockPriority.some((pp) => String(pp._id) === String(p._id))),
+  ]);
 
-  if (inStockTagged.length >= limit) return diversify(inStockTagged);
+  if (combinedTagged.length >= limit) return diversify(combinedTagged);
 
   const anyInStock = await Product.find({ isActive: true })
     .sort({ stock: -1 })
     .limit(limit * 6)
     .lean<IProduct[]>();
-  return diversify(sortByPriorityFirst([...inStockTagged, ...anyInStock.filter(isInStock)]));
+  return diversify(sortByPriorityFirst([...combinedTagged, ...anyInStock.filter(isInStock)]));
 }
 
 // Home's "New Arrivals" carousel: newest-imported first, preferring in-stock

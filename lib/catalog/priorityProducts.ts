@@ -21,11 +21,19 @@ export const PRIORITY_PRODUCT_TITLES: string[] = [
   "hawas ice",
 ];
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// Word-boundary matchers built once so a short needle like "burberry her"
+// can't accidentally match inside a longer word like "Burberry Hero" (plain
+// .includes() matched "burberry her" as a prefix of "burberry hero...").
+export const PRIORITY_PATTERNS = PRIORITY_PRODUCT_TITLES.map((title) => new RegExp(`\\b${escapeRegExp(title)}\\b`, "i"));
+
 // Returns the priority rank of a product title (lower = higher priority),
 // or -1 if the title doesn't match any priority product.
 export function getPriorityRank(title: string): number {
-  const normalized = title.toLowerCase();
-  return PRIORITY_PRODUCT_TITLES.findIndex((needle) => normalized.includes(needle));
+  return PRIORITY_PATTERNS.findIndex((pattern) => pattern.test(title));
 }
 
 // Stable sort that pulls priority-matched items to the front (in the order
