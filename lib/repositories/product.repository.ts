@@ -6,6 +6,7 @@ import { classifyProductType, isInStock } from "@/lib/catalog/classify";
 import { buildFacets } from "@/lib/catalog/facets";
 import { isOnSale } from "@/lib/catalog/pricing";
 import { sortProducts } from "@/lib/catalog/sort";
+import { sortByPriorityFirst } from "@/lib/catalog/priorityProducts";
 import { DEFAULT_PAGE_SIZE, type AnnotatedProduct, type CatalogFilters } from "@/lib/catalog/types";
 import { getDescendantCategoryScope } from "./category.repository";
 
@@ -233,7 +234,13 @@ async function findActiveByTagPattern(pattern: RegExp, limit: number): Promise<I
 }
 
 export async function getBestSellingProducts(limit = 12) {
-  return findActiveByTagPattern(BESTSELLER_TAG_RE, limit);
+  await connectToDatabase();
+  // Pull a larger pool than `limit` so the hand-picked hero products (if
+  // tagged as bestsellers) can be surfaced first, then top up with the rest.
+  const pool = await Product.find({ isActive: true, tags: BESTSELLER_TAG_RE })
+    .limit(Math.max(limit * 4, 40))
+    .lean<IProduct[]>();
+  return sortByPriorityFirst(pool).slice(0, limit);
 }
 
 export async function getBundleProducts(limit = 12) {
@@ -270,7 +277,7 @@ export async function getHomeBestSellers(limit = 5): Promise<IProduct[]> {
     .sort({ stock: -1 })
     .limit(limit * 6)
     .lean<IProduct[]>();
-  const inStockTagged = tagged.filter(isInStock);
+  const inStockTagged = sortByPriorityFirst(tagged.filter(isInStock));
 
   if (inStockTagged.length >= limit) return diversify(inStockTagged);
 
@@ -278,7 +285,7 @@ export async function getHomeBestSellers(limit = 5): Promise<IProduct[]> {
     .sort({ stock: -1 })
     .limit(limit * 6)
     .lean<IProduct[]>();
-  return diversify([...inStockTagged, ...anyInStock.filter(isInStock)]);
+  return diversify(sortByPriorityFirst([...inStockTagged, ...anyInStock.filter(isInStock)]));
 }
 
 // Home's "New Arrivals" carousel: newest-imported first, preferring in-stock

@@ -1,4 +1,5 @@
 import type { AnnotatedProduct, CatalogSort } from "./types";
+import { sortByPriorityFirst } from "./priorityProducts";
 
 export function sortProducts(products: AnnotatedProduct[], sort: CatalogSort | undefined): AnnotatedProduct[] {
   const arr = [...products];
@@ -17,11 +18,12 @@ export function sortProducts(products: AnnotatedProduct[], sort: CatalogSort | u
     case "date-desc":
       return arr.sort((a, b) => +new Date(b.createdAt) - +new Date(a.createdAt));
     case "best-selling":
-      // No order history exists yet to rank by - fall back to the same
-      // natural order as "featured" rather than fabricating a popularity signal.
-      return arr;
+      // No order history exists yet to rank by - surface the hand-picked
+      // hero products first instead of fabricating a popularity signal.
+      return sortByPriorityFirst(arr);
     case "featured":
     default:
-      return arr; // natural (insertion) order from MongoDB
+      // Hand-picked hero products first, then natural (insertion) order.
+      return sortByPriorityFirst(arr);
   }
 }
