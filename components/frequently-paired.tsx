@@ -13,7 +13,7 @@ export function FrequentlyPaired({ items, dark = false }: { items: PairedItem[];
       <span
         className={`font-body text-caption font-medium uppercase tracking-label ${dark ? "text-cream/60" : "text-ink/50"}`}
       >
-        Often Bought Together
+        Often Bought Together.
       </span>
       <ScrollSnapRow className="mt-4">
         {items.map((item) => (
